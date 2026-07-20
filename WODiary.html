@@ -1,0 +1,2990 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="theme-color" content="#FAF2E3" />
+<title>WODiary</title>
+<link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,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" />
+<link rel="icon" type="image/png" href="data:image/png;base64,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" />
+<meta name="apple-mobile-web-app-title" content="WODiary" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest" onerror="var s=document.createElement('script');s.src='https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js';s.onload=function(){if(window.__refreshIcons)window.__refreshIcons();};document.head.appendChild(s);"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --header:#4A3A26;
+    --appbg:#FAF2E3;
+    --card:#FFFBF1;
+    --ink:#4A3A26;
+    --accent:#EFC2CD;
+    /* A soft secondary pastel — pale mint — threading gentle colour through the app. */
+    --pop:#A9D4C0;
+    /* Fallback first for browsers without color-mix(); the modern value overrides it */
+    --surface:#F3EADC;
+    --surface:color-mix(in srgb, var(--card) 55%, var(--appbg));
+    --navbg:var(--appbg);
+  }
+  html{
+    background:var(--appbg);
+    overscroll-behavior-y:none;
+  }
+  html.dark-engine{
+    --appbg:#211A11;
+    --card:#2D2517;
+    --header:#F6EBD8;
+    --pop:#A7D3BE;
+  }
+  html.dark-engine body{ color:#F6EBD8; }
+  html.dark-engine .ink-text{ color:#F6EBD8 !important; }
+  html.dark-engine .text-neutral-900{ color:#F6EBD8 !important; }
+  body{
+    background-color:var(--appbg);
+    font-family:'Poppins',sans-serif;
+    font-weight:400;
+    color:#4A3A26;
+    -webkit-tap-highlight-color:transparent;
+    min-height:100vh;
+    min-height:100dvh;
+    overscroll-behavior-y:none;
+  }
+  .display{ font-family:'Bricolage Grotesque','Poppins',sans-serif; letter-spacing:-.02em; }
+  .hero-num{ font-weight:800; letter-spacing:-.035em; }
+  .text-neutral-900{ color:var(--ink) !important; }
+  .font-extrabold{ font-weight:700 !important; }
+  .font-bold{ font-weight:600 !important; }
+  .card{
+    background:var(--card);
+    border:1px solid color-mix(in srgb, var(--ink) 8%, transparent);
+    border-radius:1.6rem;
+    box-shadow:
+      0 1px 0 0 color-mix(in srgb, #fff 55%, transparent) inset,
+      0 2px 6px -2px color-mix(in srgb, var(--ink) 22%, transparent),
+      0 22px 40px -26px color-mix(in srgb, var(--ink) 60%, transparent);
+  }
+  .card-blob{
+    background:var(--card);
+    border:1px solid color-mix(in srgb, var(--ink) 8%, transparent);
+    border-radius:1.6rem;
+    box-shadow:
+      0 1px 0 0 color-mix(in srgb, #fff 55%, transparent) inset,
+      0 2px 6px -2px color-mix(in srgb, var(--ink) 22%, transparent),
+      0 22px 40px -26px color-mix(in srgb, var(--ink) 60%, transparent);
+  }
+  .pill{
+    border:1px solid color-mix(in srgb, var(--ink) 12%, transparent);
+    border-radius:9999px;
+    box-shadow:0 6px 14px -10px color-mix(in srgb, var(--ink) 40%, transparent);
+  }
+  .btn-accent{
+    background:var(--accent);
+    border:none;
+    border-radius:9999px;
+    box-shadow:0 10px 20px -12px color-mix(in srgb, var(--accent) 70%, var(--ink));
+    transition:transform .1s ease, box-shadow .1s ease, filter .1s ease;
+  }
+  .btn-accent:active{ transform:translateY(2px); filter:brightness(.96); box-shadow:0 4px 10px -8px color-mix(in srgb, var(--accent) 70%, var(--ink)); }
+  .field{
+    width:100%;
+    max-width:100%;
+    display:block;
+    background:var(--surface);
+    border:1px solid color-mix(in srgb, var(--ink) 10%, transparent);
+    border-radius:1.1rem;
+    padding:.85rem 1.05rem;
+    font-weight:500;
+    color:inherit;
+    outline:none;
+  }
+  .field:focus{
+    border-color:var(--accent);
+    box-shadow:0 0 0 3px color-mix(in srgb, var(--accent) 35%, transparent);
+  }
+  select.field{
+    -webkit-appearance:none; appearance:none;
+    background-image:url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%234A3A26' stroke-width='2' stroke-linecap='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat:no-repeat;
+    background-position:right .7rem center;
+    background-size:1rem;
+    padding-right:2rem;
+  }
+  input[type="date"].field{
+    -webkit-appearance:none; appearance:none;
+    min-width:0; width:100%; max-width:100%;
+    box-sizing:border-box; text-align:left;
+    min-height:3.1rem;
+  }
+  input[type="date"].field::-webkit-date-and-time-value{ text-align:left; margin:0; }
+  .tag{
+    border:none;
+    border-radius:9999px;
+    font-weight:500;
+    padding:.22rem .8rem;
+    font-size:.72rem;
+    display:inline-block;
+  }
+  .sticky-row{
+    border:none;
+    box-shadow:none;
+    border-radius:1.05rem;
+  }
+  .del-meal, .del-workout, .del-pr, .del-task, .del-supp{
+    background:transparent !important;
+    border:none !important;
+    box-shadow:none !important;
+    opacity:.5;
+  }
+  .nav-active{ background:var(--accent); }
+  .header-ink{ color:var(--header); }
+  input[type="color"]{
+    -webkit-appearance:none; appearance:none;
+    width:3.25rem; height:2.5rem; padding:0;
+    border:1px solid color-mix(in srgb, var(--ink) 15%, transparent);
+    border-radius:.8rem;
+    background:transparent;
+    box-shadow:0 5px 10px -8px color-mix(in srgb, var(--ink) 40%, transparent);
+  }
+  input[type="color"]::-webkit-color-swatch-wrapper{ padding:2px; }
+  input[type="color"]::-webkit-color-swatch{ border:none; border-radius:.55rem; }
+  input[type="checkbox"].chunky{
+    -webkit-appearance:none; appearance:none;
+    width:1.55rem; height:1.55rem; flex-shrink:0;
+    border:1.5px solid color-mix(in srgb, var(--ink) 35%, transparent);
+    border-radius:.55rem;
+    background:var(--card); display:inline-grid; place-content:center;
+    cursor:pointer;
+  }
+  input[type="checkbox"].chunky:checked{ background:var(--accent); border-color:var(--accent); }
+  input[type="checkbox"].chunky:checked::after{
+    content:"✓"; font-weight:600; color:var(--ink); font-size:.95rem; line-height:1;
+  }
+  .safe-nav{ padding-bottom:calc(0.15rem + env(safe-area-inset-bottom)); }
+  ::placeholder{ color:#B5A488; font-weight:400; }
+  main h1.display{ font-size:1.45rem; line-height:1.15; letter-spacing:-.02em; }
+  main header p.display{ font-size:.82rem; font-weight:500; opacity:.55; }
+  main header{ margin-bottom:1.1rem !important; }
+  main h2.display{
+    font-size:.72rem;
+    font-weight:600;
+    letter-spacing:.09em;
+    text-transform:uppercase;
+    opacity:.55;
+  }
+  section.card, section.card-blob{ position:relative; overflow:hidden; }
+  .deco-scatter{ position:absolute; pointer-events:none; inset:0; }
+  .deco-scatter svg{ position:absolute; }
+  .deco-s1{ top:12px; right:16px; width:18px; height:18px; opacity:.5; }
+  .deco-s2{ top:44px; right:40px; width:11px; height:11px; opacity:.38; }
+  .deco-s3{ bottom:22px; right:24px; width:13px; height:13px; opacity:.4; }
+  .deco-s4{ top:70px; right:14px; width:8px; height:8px; opacity:.32; }
+  .deco-c1{ fill:#E9A0B0; }
+  .deco-c2{ fill:#B7A4D9; }
+  .deco-c3{ fill:var(--accent); }
+  .deco-c4{ fill:#8FBF9F; }
+  .card svg.w-5, .card-blob svg.w-5{ width:1.05rem; height:1.05rem; }
+  .card, .card-blob{ padding:1.5rem !important; }
+  main section{ margin-bottom:1.15rem !important; }
+  /* Cards containing a form read as "input" surfaces */
+  main section:has(form){
+    background:color-mix(in srgb, var(--card) 88%, var(--accent));
+  }
+  button.btn-accent, label.btn-accent{ padding-top:.7rem !important; padding-bottom:.7rem !important; font-size:.92rem; }
+
+  /* ---------- Native-app feel ---------- */
+  body{
+    -webkit-user-select:none; user-select:none;
+    -webkit-touch-callout:none;
+    -webkit-overflow-scrolling:touch;
+  }
+  input, textarea{ -webkit-user-select:text; user-select:text; }
+
+  @keyframes cardIn{
+    from{ opacity:0; transform:translateY(14px) scale(.985); }
+    to{ opacity:1; transform:translateY(0) scale(1); }
+  }
+  /* Entrance animation runs only on a real view change, not on every re-render */
+  main.view-enter header{ animation:cardIn .38s cubic-bezier(.22,1,.36,1) both; }
+  main.view-enter section{ animation:cardIn .42s cubic-bezier(.22,1,.36,1) both; }
+  main.view-enter section:nth-of-type(1){ animation-delay:.03s; }
+  main.view-enter section:nth-of-type(2){ animation-delay:.08s; }
+  main.view-enter section:nth-of-type(3){ animation-delay:.13s; }
+  main.view-enter section:nth-of-type(4){ animation-delay:.18s; }
+  main.view-enter section:nth-of-type(5){ animation-delay:.22s; }
+  main.view-enter section:nth-of-type(n+6){ animation-delay:.26s; }
+
+  button, .pill{
+    transition:transform .12s cubic-bezier(.4,0,.2,1), filter .12s ease, background .25s ease;
+  }
+  button:active, .pill:active{ transform:scale(.955); }
+  .btn-accent:active{ transform:scale(.955) translateY(1px); }
+
+  #navbar button{ transition:transform .2s cubic-bezier(.34,1.56,.64,1), background .28s ease; }
+  #navbar button:active{ transform:scale(.9); }
+
+  @keyframes rowIn{ from{ opacity:0; transform:translateX(-6px); } to{ opacity:1; transform:translateX(0); } }
+  main.view-enter .sticky-row{ animation:rowIn .3s ease both; }
+
+  @media (prefers-reduced-motion: reduce){
+    main.view-enter section, main.view-enter header, main.view-enter .sticky-row{ animation:none !important; }
+    button:active, .pill:active, #navbar button:active{ transform:none; }
+  }
+
+  /* ---------- Toast ---------- */
+  #toast{
+    position:fixed;
+    left:50%;
+    bottom:calc(5.2rem + env(safe-area-inset-bottom));
+    transform:translateX(-50%) translateY(20px);
+    z-index:100;
+    display:flex; align-items:center; gap:.5rem;
+    padding:.7rem 1.1rem;
+    border-radius:9999px;
+    background:var(--ink);
+    color:var(--card);
+    font-weight:600;
+    font-size:.85rem;
+    box-shadow:0 12px 30px -10px rgba(0,0,0,.4);
+    opacity:0;
+    pointer-events:none;
+    transition:opacity .25s ease, transform .35s cubic-bezier(.34,1.56,.64,1);
+    white-space:nowrap;
+    max-width:90vw;
+  }
+  #toast.show{
+    opacity:1;
+    transform:translateX(-50%) translateY(0);
+  }
+  #toast svg{ width:1rem; height:1rem; flex-shrink:0; }
+
+  /* ---------- Visual polish ---------- */
+
+  /* Soft ambient gradient behind everything — depth without noise */
+  body::before{
+    content:"";
+    position:fixed; inset:0;
+    pointer-events:none; z-index:-1;
+    background:
+      radial-gradient(ellipse 80% 50% at 50% -8%, color-mix(in srgb, var(--accent) 16%, transparent), transparent 65%),
+      radial-gradient(ellipse 60% 40% at 100% 100%, color-mix(in srgb, var(--accent) 9%, transparent), transparent 60%);
+  }
+
+  /* Hero numbers get a subtle vertical gradient — richer than flat ink */
+  .hero-num{
+    font-family:'Bricolage Grotesque', sans-serif;
+    font-weight:600;
+    font-variation-settings:'opsz' 40;
+    letter-spacing:-.03em;
+    background:linear-gradient(175deg, var(--ink) 0%, color-mix(in srgb, var(--ink) 68%, var(--accent)) 100%);
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+  }
+  /* Page titles: bold, characterful grotesque */
+  main h1.display{
+    font-family:'Bricolage Grotesque', sans-serif;
+    font-weight:700;
+    font-variation-settings:'opsz' 48;
+    letter-spacing:-.025em;
+    font-size:1.7rem;
+  }
+  main header h1.display{ font-size:1.9rem; line-height:1.12; }
+
+  /* Cards: layered shadow for real depth */
+  .card, .card-blob{
+    box-shadow:
+      0 1px 2px -1px color-mix(in srgb, var(--ink) 12%, transparent),
+      0 8px 20px -14px color-mix(in srgb, var(--ink) 45%, transparent),
+      0 24px 48px -32px color-mix(in srgb, var(--ink) 55%, transparent);
+  }
+
+  /* Tags: soft inner highlight so they feel like objects, not stickers */
+  .tag{
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.35);
+  }
+
+  /* Accent button: gentle gradient + glow */
+  .btn-accent{
+    background:linear-gradient(180deg,
+      color-mix(in srgb, var(--accent) 92%, white) 0%,
+      var(--accent) 100%);
+    box-shadow:
+      0 1px 2px rgba(0,0,0,.06),
+      0 8px 18px -10px color-mix(in srgb, var(--accent) 75%, var(--ink));
+  }
+
+  /* Nav bar: frosted glass */
+  nav{
+    backdrop-filter:blur(14px) saturate(1.3);
+    -webkit-backdrop-filter:blur(14px) saturate(1.3);
+    background:color-mix(in srgb, var(--navbg) 82%, transparent) !important;
+  }
+
+  /* A ring that hits its target pulses once, then rests */
+  @keyframes ringDone{
+    0%{ transform:scale(1); }
+    35%{ transform:scale(1.09); }
+    70%{ transform:scale(.98); }
+    100%{ transform:scale(1); }
+  }
+  .ring-done{ animation:ringDone .7s cubic-bezier(.34,1.56,.64,1) 1; }
+  .ring-done .ring-pct{ font-weight:700; }
+
+  /* Focus ring feels intentional */
+  .field:focus{
+    box-shadow:0 0 0 3.5px color-mix(in srgb, var(--accent) 32%, transparent);
+  }
+
+  /* Collapsible macro helper */
+  details.macro-helper summary{ list-style:none; }
+  details.macro-helper summary::-webkit-details-marker{ display:none; }
+  details.macro-helper summary::marker{ content:''; }
+  .macro-chev{ transition:transform .22s ease; }
+  details.macro-helper[open] .macro-chev{ transform:rotate(180deg); }
+
+  /* Dark mode: on accent-coloured surfaces (which stay light), keep text & icons dark
+     so buttons, selected pills and the "today" row read correctly. Icons and
+     var(--ink) details elsewhere become light via the --ink remap in applyTheme. */
+  html.dark-engine [style*="background:var(--accent)"],
+  html.dark-engine [style*="background:var(--accent)"] .ink-text,
+  html.dark-engine [style*="background:var(--accent)"] .text-neutral-900,
+  html.dark-engine .btn-accent,
+  html.dark-engine .btn-accent .ink-text,
+  html.dark-engine .btn-accent .text-neutral-900{ color:#3A2E1E !important; }
+  html.dark-engine [style*="background:var(--accent)"] svg.lucide,
+  html.dark-engine .btn-accent svg.lucide{ color:#3A2E1E !important; }
+</style>
+</head>
+<body>
+
+<div class="fixed top-0 left-0 right-0 z-40" style="height:env(safe-area-inset-top); background:var(--appbg);"></div>
+
+<main id="view" class="w-full max-w-md mx-auto px-4" style="padding-top:calc(1.25rem + env(safe-area-inset-top)); padding-bottom:calc(4.5rem + env(safe-area-inset-bottom));"></main>
+
+<div id="toast"></div>
+
+<nav class="fixed bottom-0 left-0 right-0 z-50 safe-nav pt-1 px-2" style="background:var(--navbg); border-top:1px solid color-mix(in srgb, var(--ink) 10%, transparent); box-shadow:0 -8px 24px -18px color-mix(in srgb, var(--ink) 60%, transparent);">
+  <div id="navbar" class="w-full max-w-md mx-auto flex flex-row justify-between items-center gap-1"></div>
+</nav>
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+
+/* ============ STATE & PERSISTENCE ============ */
+const STORAGE_KEY = 'personal_fitness_dashboard_data';
+
+const DEFAULT_THEME = {
+  header:'#4E4658', appbg:'#F9F6FB', card:'#FFFEFF', ink:'#4E4658', accent:'#EFC2CD',
+  surface:'', nav:'', dark:false
+};
+const PRESETS = [
+  { name:'Petal',    header:'#4E4658', appbg:'#F9F6FB', card:'#FFFEFF', ink:'#4E4658', accent:'#EFC2CD' },
+  { name:'Mint',     header:'#3E514A', appbg:'#F3F9F5', card:'#FBFFFD', ink:'#43564F', accent:'#B4DBC8' },
+  { name:'Lavender', header:'#453E58', appbg:'#F6F3FC', card:'#FDFCFF', ink:'#4E4664', accent:'#CFC0E6' },
+  { name:'Sky',      header:'#37454F', appbg:'#F1F6FA', card:'#FAFDFF', ink:'#3E505F', accent:'#B4D3E8' },
+  { name:'Peach',    header:'#4E3A30', appbg:'#FDF5F0', card:'#FFFBF8', ink:'#5A463C', accent:'#F6C9B2' },
+  { name:'Honey',    header:'#4A3A26', appbg:'#FAF2E3', card:'#FFFBF1', ink:'#4A3A26', accent:'#F2C46D' }
+];
+const LEGACY_THEMES = [
+  { header:'#1A1A1A', appbg:'#FFF4E3', card:'#FFFDF7', ink:'#1A1A1A', accent:'#FFD166' },
+  { header:'#40362F', appbg:'#F6F1EA', card:'#FFFDF9', ink:'#40362F', accent:'#D4A5A5' },
+  // Old honey default -> new pastel Petal
+  { header:'#4A3A26', appbg:'#FAF2E3', card:'#FFFBF1', ink:'#4A3A26', accent:'#F2C46D' },
+  // Short-lived bold Ember default -> Petal
+  { header:'#241A12', appbg:'#FBF4E6', card:'#FFFDF8', ink:'#241A12', accent:'#F5A63D' },
+  // Previous "Bloom" pastel default -> lighter Petal
+  { header:'#463E4C', appbg:'#F7F3F8', card:'#FEFCFE', ink:'#463E4C', accent:'#E8A9B7' }
+];
+function migrateTheme(){
+  LEGACY_THEMES.forEach(legacy=>{
+    Object.keys(legacy).forEach(k=>{
+      if(String(state.theme[k]||'').toUpperCase() === legacy[k].toUpperCase()){
+        state.theme[k] = DEFAULT_THEME[k];
+      }
+    });
+  });
+}
+
+let state = {
+  meals: {},            // { 'YYYY-MM-DD': [ {id,name,cal,p,c,f} ] }
+  water: {},            // { 'YYYY-MM-DD': totalMl }
+  waterLog: {},         // { 'YYYY-MM-DD': [ml, ml, ...] } — enables Undo
+  workouts: [],         // [ {id,date,type,...} ]
+  prs: [],              // [ {id,cat,name,value,date} ]
+  tasks: [],            // [ {id,category,text,done} ]
+  taskColors: {},       // { categoryName: hex }
+  supplements: { list: [], checked: {} }, // checked: { date: { name:true } }
+  targets: { calories:2200, protein:140, carbs:230, fat:70, water:2500 },
+  theme: Object.assign({}, DEFAULT_THEME)
+};
+
+function loadState(){
+  try{
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if(raw){
+      const parsed = JSON.parse(raw);
+      state = Object.assign({}, state, parsed);
+      state.theme = Object.assign({}, DEFAULT_THEME, parsed.theme || {});
+      migrateTheme();
+      state.targets = Object.assign({}, {calories:2200,protein:140,carbs:230,fat:70,water:2500}, parsed.targets || {});
+      state.supplements = Object.assign({ list:[], checked:{} }, parsed.supplements || {});
+      // Prune supplement check history older than 90 days — it's only needed for today
+      const cutoff = new Date();
+      cutoff.setDate(cutoff.getDate() - 90);
+      const cutoffKey = keyOf(cutoff);
+      Object.keys(state.supplements.checked).forEach(k=>{
+        if(k < cutoffKey) delete state.supplements.checked[k];
+      });
+      state.taskColors = Object.assign({}, parsed.taskColors || {});
+      state.waterLog = Object.assign({}, parsed.waterLog || {});
+    }
+  }catch(e){ console.error('State load failed', e); }
+}
+function saveState(){
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+}
+
+/* ============ HELPERS ============ */
+/* Guarded icon hydration: never throws, retries until the Lucide
+   library is available, so icons can never silently vanish. */
+let iconRetryTimer = null;
+function refreshIcons(){
+  if(window.lucide && typeof window.lucide.createIcons === 'function'){
+    window.lucide.createIcons();
+    if(iconRetryTimer){ clearInterval(iconRetryTimer); iconRetryTimer = null; }
+  }else if(!iconRetryTimer){
+    iconRetryTimer = setInterval(()=>{
+      if(window.lucide && typeof window.lucide.createIcons === 'function'){
+        window.lucide.createIcons();
+        clearInterval(iconRetryTimer); iconRetryTimer = null;
+      }
+    }, 300);
+  }
+}
+window.__refreshIcons = refreshIcons;
+window.addEventListener('load', refreshIcons);
+
+// Haptic feedback — makes taps feel physical, like a native app
+function haptic(pattern){
+  if(navigator.vibrate) {
+    try { navigator.vibrate(pattern); } catch(e) {}
+  }
+}
+
+// Hero numbers count up on render — but only when the value actually changed,
+// so unrelated re-renders (ticking a task) don't re-trigger the animation.
+const lastCounterValues = new Map();
+// Track which rings are already complete so the "done" bounce fires once, on the
+// transition to 100% — not on every re-render while it sits at 100%.
+const completedRings = new Map();
+function animateCounters(){
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('.hero-num').forEach((el, i)=>{
+    const raw = el.textContent.replace(/,/g, '').trim();
+    const target = Number(raw);
+    if(!isFinite(target)) return;
+
+    // Identify this counter by its position and its card, so values are tracked per-slot
+    const key = (activeTab || '') + ':' + i;
+    const prev = lastCounterValues.get(key);
+    lastCounterValues.set(key, target);
+
+    // Nothing to animate: same value as last render, or reduced-motion
+    if(reduce || prev === target){
+      el.textContent = target.toLocaleString('en-US');
+      return;
+    }
+
+    // Animate from the previous value (or 0 on first appearance) to the target,
+    // so an increase counts up and a decrease counts down — never a flash to 0.
+    const from = (typeof prev === 'number' && isFinite(prev)) ? prev : 0;
+    const duration = 700;
+    const start = performance.now();
+    const tick = (t) => {
+      const p = Math.min(1, (t - start) / duration);
+      const eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(from + (target - from) * eased).toLocaleString('en-US');
+      if(p < 1) requestAnimationFrame(tick);
+      else el.textContent = target.toLocaleString('en-US');
+    };
+    requestAnimationFrame(tick);
+  });
+}
+
+// Confetti burst — pure canvas, no dependencies. Fires on a new record.
+function confetti(){
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const cv = document.createElement('canvas');
+  cv.style.cssText = 'position:fixed; inset:0; pointer-events:none; z-index:200;';
+  cv.width = window.innerWidth; cv.height = window.innerHeight;
+  document.body.appendChild(cv);
+  const ctx = cv.getContext('2d');
+  const colors = ['#E9A0B0', '#B7A4D9', '#F2C46D', '#8FBF9F', '#F5D3BD'];
+  const parts = Array.from({length: 90}, ()=>({
+    x: cv.width / 2 + (Math.random() - .5) * 120,
+    y: cv.height * .38,
+    vx: (Math.random() - .5) * 9,
+    vy: Math.random() * -11 - 3,
+    size: Math.random() * 7 + 4,
+    color: colors[Math.floor(Math.random() * colors.length)],
+    rot: Math.random() * Math.PI,
+    vr: (Math.random() - .5) * .25
+  }));
+  let frame = 0;
+  const draw = () => {
+    ctx.clearRect(0, 0, cv.width, cv.height);
+    parts.forEach(p=>{
+      p.vy += .32;          // gravity
+      p.x += p.vx;
+      p.y += p.vy;
+      p.rot += p.vr;
+      ctx.save();
+      ctx.translate(p.x, p.y);
+      ctx.rotate(p.rot);
+      ctx.globalAlpha = Math.max(0, 1 - frame / 110);
+      ctx.fillStyle = p.color;
+      ctx.fillRect(-p.size / 2, -p.size / 2, p.size, p.size * .62);
+      ctx.restore();
+    });
+    frame++;
+    if(frame < 115) requestAnimationFrame(draw);
+    else cv.remove();
+  };
+  requestAnimationFrame(draw);
+}
+
+// Two-step delete: the first tap arms the button, the second confirms.
+// Auto-disarms after 3s so nothing stays dangerous.
+function armDelete(btn, onConfirm){
+  if(btn.dataset.armed === '1'){
+    onConfirm();
+    return;
+  }
+  btn.dataset.armed = '1';
+  const original = btn.innerHTML;
+  const bg = btn.style.background;
+  btn.style.background = '#E9A0B0';
+  btn.innerHTML = '<span style="font-size:.6rem; font-weight:700; color:#4A3A26; padding:0 .2rem;">Sure?</span>';
+  haptic(20);
+  setTimeout(()=>{
+    if(!btn.isConnected) return;
+    btn.dataset.armed = '0';
+    btn.style.background = bg;
+    btn.innerHTML = original;
+    refreshIcons();
+  }, 3000);
+}
+
+// Floating confirmation toast — immediate feedback for every save
+let toastTimer = null;
+function toast(message, icon = 'check'){
+  const el = document.getElementById('toast');
+  if(!el) return;
+  el.innerHTML = `<i data-lucide="${icon}"></i><span>${escapeHtml(message)}</span>`;
+  refreshIcons();
+  el.classList.add('show');
+  if(toastTimer) clearTimeout(toastTimer);
+  toastTimer = setTimeout(()=>{ el.classList.remove('show'); }, 2100);
+}
+// Light tick on every button press across the whole app
+document.addEventListener('click', (e)=>{
+  if(e.target.closest('button, .pill, input[type="checkbox"]')) haptic(8);
+}, true);
+
+function uid(){ return Date.now().toString(36) + Math.random().toString(36).slice(2,7); }
+function fmt(n){
+  const num = Number(n);
+  // Guard against NaN and Infinity, which would print as "NaN" or "∞"
+  const safe = Number.isFinite(num) ? num : 0;
+  return safe.toLocaleString('en-US', { maximumFractionDigits: 1 });
+}
+function parseNum(v){
+  const cleaned = String(v ?? '').replace(/[,\s]/g,'');
+  const num = Number(cleaned);
+  // Reject NaN, Infinity, and negatives — a negative calorie or weight would
+  // silently corrupt every total that sums these values.
+  if(!Number.isFinite(num) || num < 0) return 0;
+  return num;
+}
+function todayKey(){
+  const d = new Date();
+  return d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+}
+function escapeHtml(s){
+  return String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+function greeting(){
+  const h = new Date().getHours();
+  if(h >= 5 && h < 12) return 'Good morning, Maya';
+  if(h >= 12 && h < 17) return 'Good afternoon, Maya';
+  if(h >= 17 && h < 22) return 'Good evening, Maya';
+  return 'Good night, Maya';
+}
+function dateNoYear(d){
+  return d.toLocaleDateString('en-US',{ weekday:'long', month:'long', day:'numeric' });
+}
+function sprigSVG(){
+  return `<div class="deco-scatter">
+    <svg class="deco-s1" viewBox="0 0 24 24"><path class="deco-c1" d="M12 0 C13 8, 16 11, 24 12 C16 13, 13 16, 12 24 C11 16, 8 13, 0 12 C8 11, 11 8, 12 0 Z"/></svg>
+    <svg class="deco-s2" viewBox="0 0 24 24"><path class="deco-c2" d="M12 0 C13 8, 16 11, 24 12 C16 13, 13 16, 12 24 C11 16, 8 13, 0 12 C8 11, 11 8, 12 0 Z"/></svg>
+    <svg class="deco-s3" viewBox="0 0 24 24"><path class="deco-c3" d="M12 0 C13 8, 16 11, 24 12 C16 13, 13 16, 12 24 C11 16, 8 13, 0 12 C8 11, 11 8, 12 0 Z"/></svg>
+    <svg class="deco-s4" viewBox="0 0 24 24"><circle class="deco-c4" cx="12" cy="12" r="12"/></svg>
+  </div>`;
+}
+function keyOf(d){
+  return d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+}
+
+/* ============ THEME ============ */
+function applyTheme(){
+  const t = state.theme;
+  const root = document.documentElement;
+  root.style.setProperty('--header', t.header);
+  root.style.setProperty('--ink', t.ink);
+  root.style.setProperty('--accent', t.accent);
+  if(t.dark){
+    root.classList.add('dark-engine');
+    root.style.setProperty('--appbg', '#171512');
+    root.style.setProperty('--card', '#26221C');
+    // In dark mode the ink (used for icons and fine detail) must be light to read
+    // on dark cards; accent surfaces flip back to dark ink via CSS above.
+    root.style.setProperty('--ink', '#EFE6D6');
+  }else{
+    root.classList.remove('dark-engine');
+    root.style.setProperty('--appbg', t.appbg);
+    root.style.setProperty('--card', t.card);
+  }
+  // Surface & nav: use the custom pick if set, otherwise auto-derive from the card
+  if(t.surface){
+    root.style.setProperty('--surface', t.surface);
+  }else{
+    root.style.setProperty('--surface', 'color-mix(in srgb, var(--card) 55%, var(--appbg))');
+  }
+  if(t.nav){
+    root.style.setProperty('--navbg', t.nav);
+  }else{
+    root.style.setProperty('--navbg', 'var(--appbg)');
+  }
+}
+
+/* ============ NAV ============ */
+const TABS = [
+  { id:'home', label:'Home', icon:'home' },
+  { id:'food', label:'Food', icon:'utensils' },
+  { id:'train', label:'Train', icon:'dumbbell' },
+  { id:'prs', label:'PRs', icon:'trophy' },
+  { id:'tasks', label:'Tasks', icon:'list-checks' },
+  { id:'settings', label:'Settings', icon:'settings' }
+];
+let activeTab = 'home';
+let prCategory = 'lift';
+let trainMode = null;
+let editingWorkoutId = null;
+let pendingPR = null; // auto-detected record awaiting confirmation
+let diarySearch = '';
+let monthOffset = 0; // 0 = this month, -1 = last month, ...
+let editingMealId = null;
+let mealDraft = {}; // prefill values for the meal form
+let selectedTaskCat = null;
+let editFields = {}; // prefill values for the type-specific inputs when editing
+// A workout is now a flat, ordered list of segments. Each segment is one
+// labelled step ("AMRAP 10 min", "Rest 2:00", "Row 1200m", "Warm-up") with an
+// optional round multiplier and its own list of exercises. No forced
+// warm-up/main/cool-down hierarchy and no nesting — a rest is just a segment,
+// the next AMRAP is just the next segment.
+let segDraft = [{ label: '', rounds: '', items: [] }];
+const freshSegDraft = () => [{ label: '', rounds: '', items: [] }];
+let selectedTrainDate = todayKey();
+let selectedFoodDate = todayKey();
+let trainDaysShown = 7;
+let foodDaysShown = 7;
+
+function renderNav(){
+  const nav = document.getElementById('navbar');
+  nav.innerHTML = TABS.map(t => {
+    const on = activeTab === t.id;
+    return `
+    <button data-tab="${t.id}" class="flex flex-col items-center gap-0.5 px-1.5 py-1.5 flex-1 rounded-2xl" style="background:${on ? 'var(--pop)' : 'transparent'}; box-shadow:${on ? '0 6px 14px -7px color-mix(in srgb, var(--pop) 90%, transparent)' : 'none'}; transition:background .25s ease;">
+      <i data-lucide="${t.icon}" class="w-5 h-5" style="color:${on ? 'var(--ink)' : 'var(--ink)'}; opacity:${on ? '1' : '.78'};"></i>
+      <span class="text-[11px]" style="color:var(--ink); font-weight:${on ? '700' : '500'};">${t.label}</span>
+    </button>
+  `; }).join('');
+  nav.querySelectorAll('button[data-tab]').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      if(activeTab !== b.dataset.tab){ monthOffset = 0; editingMealId = null; mealDraft = {}; trainDaysShown = 7; foodDaysShown = 7; trainMode = null; editingWorkoutId = null; editFields = {}; diarySearch = ''; selectedTaskCat = null; segDraft = freshSegDraft(); }
+      activeTab = b.dataset.tab; render(true);
+    });
+  });
+  refreshIcons();
+}
+
+/* ============ HOME ============ */
+function sparkline(values, color){
+  if(!values.length || values.every(v=>v===0)) return '';
+  const w = 260, h = 44, pad = 4;
+  const max = Math.max(...values, 1);
+  const step = values.length > 1 ? (w - pad*2) / (values.length - 1) : 0;
+  const pts = values.map((v,i)=>{
+    const x = pad + i * step;
+    const y = h - pad - (v / max) * (h - pad*2);
+    return [x, y];
+  });
+  // Smooth curve through the points
+  let d = `M ${pts[0][0]} ${pts[0][1]}`;
+  for(let i = 1; i < pts.length; i++){
+    const [x0, y0] = pts[i-1];
+    const [x1, y1] = pts[i];
+    const cx = (x0 + x1) / 2;
+    d += ` C ${cx} ${y0}, ${cx} ${y1}, ${x1} ${y1}`;
+  }
+  const area = d + ` L ${pts[pts.length-1][0]} ${h} L ${pts[0][0]} ${h} Z`;
+  return `
+    <svg viewBox="0 0 ${w} ${h}" preserveAspectRatio="none" style="width:100%; height:44px; display:block; margin-top:.4rem;">
+      <defs>
+        <linearGradient id="sparkFill" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="${color}" stop-opacity=".28" />
+          <stop offset="100%" stop-color="${color}" stop-opacity="0" />
+        </linearGradient>
+      </defs>
+      <path d="${area}" fill="url(#sparkFill)" />
+      <path d="${d}" fill="none" stroke="${color}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+      ${pts.map(([x,y],i)=> i === pts.length-1 ? `<circle cx="${x}" cy="${y}" r="3.5" fill="${color}" />` : '').join('')}
+    </svg>
+  `;
+}
+function progressRing(value, target, color, label, unit = 'g'){
+  const v = Number(value) || 0;
+  const t = Number(target) || 0;
+  const pct = t > 0 ? Math.max(0, Math.min(100, (v / t) * 100)) : 0;
+  // Bounce only when a ring first reaches 100%, not on every render while complete.
+  const done = pct >= 100;
+  const celebrate = done && completedRings.get(label) !== true;
+  completedRings.set(label, done);
+  const r = 26;
+  const circ = 2 * Math.PI * r;
+  const offset = circ - (pct / 100) * circ;
+  return `
+    <div class="flex flex-col items-center gap-1.5 ${celebrate ? 'ring-done' : ''}" style="flex:1; min-width:0;">
+      <div style="position:relative; width:66px; height:66px;">
+        <svg width="66" height="66" style="transform:rotate(-90deg);">
+          <circle cx="33" cy="33" r="${r}" fill="none" stroke="var(--surface)" stroke-width="6" />
+          <circle cx="33" cy="33" r="${r}" fill="none" stroke="${color}" stroke-width="6"
+            stroke-linecap="round"
+            stroke-dasharray="${circ}"
+            stroke-dashoffset="${offset}"
+            style="transition:stroke-dashoffset .8s cubic-bezier(.22,1,.36,1);" />
+        </svg>
+        <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center;">
+          <span class="ring-pct font-extrabold ink-text text-neutral-900" style="font-size:.78rem;">${pct >= 100 ? "✓" : Math.round(pct) + "%"}</span>
+        </div>
+      </div>
+      <span class="font-extrabold ink-text text-neutral-900" style="font-size:.68rem; letter-spacing:.02em;">${label}</span>
+      <span class="ink-text text-neutral-900" style="font-size:.62rem; opacity:.65; font-weight:600;">${fmt(value)}/${fmt(target)}${unit}</span>
+    </div>
+  `;
+}
+function renderHome(){
+  const tk = todayKey();
+  const meals = state.meals[tk] || [];
+  const cal = meals.reduce((s,m)=>s+Number(m.cal||0),0);
+  const pro = meals.reduce((s,m)=>s+Number(m.p||0),0);
+  const carb = meals.reduce((s,m)=>s+Number(m.c||0),0);
+  const fat = meals.reduce((s,m)=>s+Number(m.f||0),0);
+  const remaining = Math.max(0, state.targets.calories - cal);
+  const openTasks = state.tasks.filter(t=>!t.done);
+
+  // Week rows: full Sunday -> Saturday, so planned future days show too
+  const now = new Date();
+  const dow = now.getDay(); // 0 = Sunday (week starts Sunday)
+  const rows = [];
+  for(let i=0;i<=6;i++){
+    const d = new Date(now); d.setDate(now.getDate() - (dow - i));
+    const k = keyOf(d);
+    const dayWorkouts = state.workouts.filter(w=>w.date===k);
+    rows.push({ d, k, dayWorkouts, isToday: k===tk, isFuture: k > tk });
+  }
+  const typeLabel = { running:'Run', crossfit:'CrossFit', strength:'Strength', accessory:'Skills' };
+  const typeColor = { running:'#F6E2AE', crossfit:'#F5D3BD', strength:'#D9D0E3', accessory:'#DFE3C8' };
+
+  const checked = state.supplements.checked[tk] || {};
+
+  return `
+    <header class="mb-6">
+      <h1 class="display font-bold header-ink" style="font-size:2.05rem; line-height:1.06; letter-spacing:-.025em;">${greeting()}</h1>
+      <div class="flex items-center gap-2 mt-2">
+        <span style="width:1.5rem; height:.28rem; border-radius:1rem; background:var(--pop); display:inline-block; flex-shrink:0;"></span>
+        <p class="display font-semibold text-lg header-ink" style="opacity:.72;">${dateNoYear(now)}</p>
+      </div>
+    </header>
+
+    <section class="card p-5 mb-5">
+      ${sprigSVG()}
+      <div class="flex items-center gap-2 mb-3">
+        <i data-lucide="calendar-heart" class="w-5 h-5" style="color:var(--pop);"></i>
+        <h2 class="display font-extrabold text-2xl ink-text text-neutral-900">Training Week at a Glance</h2>
+      </div>
+      <div class="flex flex-col gap-3">
+        ${rows.map(r=>`
+          <div class="sticky-row rounded-2xl px-4 py-3 flex flex-row items-center justify-between gap-2" style="background:${r.isToday ? 'var(--accent)' : 'var(--surface)'}; ${r.isFuture ? 'opacity:.72;' : ''}">
+            <span class="font-extrabold text-sm ink-text text-neutral-900">${r.d.toLocaleDateString('en-US',{weekday:'short', month:'short', day:'numeric'})}${r.isToday ? ' · Today' : ''}</span>
+            <span class="flex flex-wrap gap-1.5 justify-end">
+              ${r.dayWorkouts.length
+                ? r.dayWorkouts.map(w=>`<span class="tag text-neutral-900" style="background:${w.planned ? 'transparent' : (typeColor[w.type] || '#EEE')}; ${w.planned ? 'border:1.5px dashed color-mix(in srgb, var(--ink) 40%, transparent);' : ''} color:#4A3A26;">${w.planned ? '◷ ' : ''}${typeLabel[w.type] || w.type}</span>`).join('')
+                : `<span class="tag text-neutral-900" style="background:#F4ECDB; color:#4A3A26;">${r.isFuture ? '—' : 'Rest'}</span>`}
+            </span>
+          </div>
+        `).join('')}
+      </div>
+    </section>
+
+    <section class="card-blob p-5 mb-5">
+      ${sprigSVG()}
+      <div class="flex items-center gap-2 mb-4">
+        <i data-lucide="flame" class="w-5 h-5" style="color:var(--pop);"></i>
+        <h2 class="display font-extrabold text-2xl ink-text text-neutral-900">Today</h2>
+      </div>
+
+      <div class="flex flex-col items-start mb-5">
+        <div class="flex flex-row items-baseline gap-1.5">
+          <span class="display hero-num" style="font-size:3.1rem; line-height:1; color:var(--ink);">${fmt(remaining)}</span>
+          <span class="ink-text text-neutral-900" style="font-size:.9rem; font-weight:600; opacity:.45;">kcal left</span>
+        </div>
+        <span class="ink-text text-neutral-900" style="font-size:.72rem; font-weight:500; opacity:.5; margin-top:.35rem;">${fmt(cal)} of ${fmt(state.targets.calories)} eaten</span>
+      </div>
+
+      <div class="flex flex-row gap-2 w-full">
+        ${progressRing(pro, state.targets.protein, '#E9A0B0', 'PROTEIN')}
+        ${progressRing(carb, state.targets.carbs, '#B7A4D9', 'CARBS')}
+        ${progressRing(fat, state.targets.fat, '#F2C46D', 'FAT')}
+        ${progressRing(state.water[tk]||0, state.targets.water, '#8FBF9F', 'WATER', 'ml')}
+      </div>
+    </section>
+
+    <section class="card p-5 mb-5">
+      ${sprigSVG()}
+      ${(() => {
+        // Which month are we viewing? monthOffset 0 = this month, -1 = last month, etc.
+        const view = new Date(now.getFullYear(), now.getMonth() + monthOffset, 1);
+        const mp = view.getFullYear() + '-' + String(view.getMonth()+1).padStart(2,'0');
+        const monthName = view.toLocaleDateString('en-US', { month:'long' });
+        const showYear = view.getFullYear() !== now.getFullYear();
+        const heading = monthOffset === 0 ? 'This Month' : monthName + (showYear ? ' ' + view.getFullYear() : '');
+
+        const mw = state.workouts.filter(w => !w.planned && (w.date||'').startsWith(mp));
+        const byType = {};
+        mw.forEach(w => { byType[w.type] = (byType[w.type]||0) + 1; });
+        const tn = { running:'Run', crossfit:'CrossFit', strength:'Strength', accessory:'Skills' };
+        const tc = { running:'#F6E2AE', crossfit:'#F5D3BD', strength:'#D9D0E3', accessory:'#DFE3C8' };
+
+        // Can we go further back? Only if any workout exists before this month.
+        const oldest = state.workouts.reduce((min,w) => (w.date && w.date < min) ? w.date : min, '9999-99-99');
+        const hasOlder = oldest !== '9999-99-99' && oldest < mp + '-01';
+
+        return `
+          <div class="flex flex-row items-center justify-between gap-2 mb-3">
+            <div class="flex items-center gap-2 min-w-0">
+              <i data-lucide="trending-up" class="w-5 h-5 flex-shrink-0" style="color:var(--ink);"></i>
+              <h2 class="display font-extrabold text-2xl ink-text text-neutral-900">${heading}</h2>
+            </div>
+            <div class="flex flex-row items-center gap-1.5 flex-shrink-0">
+              <button id="monthPrev" class="pill px-2 py-1" style="background:var(--surface); ${hasOlder ? '' : 'opacity:.35;'}" ${hasOlder ? '' : 'disabled'}>
+                <i data-lucide="chevron-left" class="w-4 h-4" style="color:var(--ink);"></i>
+              </button>
+              <button id="monthNext" class="pill px-2 py-1" style="background:var(--surface); ${monthOffset < 0 ? '' : 'opacity:.35;'}" ${monthOffset < 0 ? '' : 'disabled'}>
+                <i data-lucide="chevron-right" class="w-4 h-4" style="color:var(--ink);"></i>
+              </button>
+            </div>
+          </div>
+
+          ${!mw.length ? `<p class="font-extrabold text-sm ink-text text-neutral-900">No workouts logged in ${monthOffset === 0 ? 'this month' : monthName} yet.</p>` : `
+            <div class="flex flex-row items-baseline gap-1.5 mb-3">
+              <span class="display hero-num" style="font-size:1.9rem; line-height:1;">${fmt(mw.length)}</span>
+              <span class="ink-text text-neutral-900" style="font-size:.9rem; font-weight:600; opacity:.45;">workout${mw.length===1?'':'s'}</span>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              ${Object.keys(byType).sort().map(t=>`<span class="tag" style="background:${tc[t]||'#EBD9C3'}; color:#4A3A26;">${tn[t]||t} ×${fmt(byType[t])}</span>`).join('')}
+            </div>
+          `}
+        `;
+      })()}
+    </section>
+
+    <section class="card p-5 mb-5">
+      <div class="flex items-center gap-2 mb-3">
+        <i data-lucide="sticky-note" class="w-5 h-5" style="color:var(--pop);"></i>
+        <h2 class="display font-extrabold text-2xl ink-text text-neutral-900">Open Tasks</h2>
+      </div>
+      ${openTasks.length ? `
+        <div class="flex flex-col gap-2.5">
+          ${openTasks.map(t=>`
+            <label class="sticky-row rounded-2xl px-4 py-2.5 flex flex-row items-center gap-3 cursor-pointer" style="background:var(--surface);">
+              <input type="checkbox" class="chunky home-task" data-id="${t.id}" />
+              <span class="font-extrabold text-sm flex-1 ink-text text-neutral-900 break-words">${escapeHtml(t.text)}</span>
+              <span class="tag flex-shrink-0" style="background:${state.taskColors[t.category] || '#EBD9C3'}; color:#4A3A26;">${escapeHtml(t.category)}</span>
+            </label>
+          `).join('')}
+        </div>
+      ` : `<div class="flex flex-col items-center text-center py-3 gap-1.5"><i data-lucide="check-check" class="w-7 h-7" style="color:var(--accent);"></i><p class="font-extrabold text-sm ink-text text-neutral-900">All clear</p></div>`}
+    </section>
+
+    <section class="card-blob p-5">
+      ${sprigSVG()}
+      <div class="flex items-center gap-2 mb-3">
+        <i data-lucide="pill" class="w-5 h-5" style="color:var(--pop);"></i>
+        <h2 class="display font-extrabold text-2xl ink-text text-neutral-900">Daily Meds &amp; Supplements</h2>
+      </div>
+      ${state.supplements.list.length ? `
+        <div class="flex flex-col gap-2.5">
+          ${state.supplements.list.map(s=>`
+            <label class="sticky-row rounded-2xl px-4 py-2.5 flex flex-row items-center gap-3 cursor-pointer" style="background:var(--surface);">
+              <input type="checkbox" class="chunky supp-check" data-name="${escapeHtml(s)}" ${checked[s] ? 'checked' : ''} />
+              <span class="font-extrabold text-sm ink-text text-neutral-900">${escapeHtml(s)}</span>
+            </label>
+          `).join('')}
+        </div>
+      ` : `<p class="font-extrabold text-sm ink-text text-neutral-900">Build your daily list in Settings.</p>`}
+    </section>
+  `;
+}
+function bindHome(){
+  const mPrev = document.getElementById('monthPrev');
+  if(mPrev && !mPrev.disabled){
+    mPrev.addEventListener('click', ()=>{ monthOffset--; render(); });
+  }
+  const mNext = document.getElementById('monthNext');
+  if(mNext && !mNext.disabled){
+    mNext.addEventListener('click', ()=>{ monthOffset = Math.min(0, monthOffset + 1); render(); });
+  }
+  document.querySelectorAll('.home-task').forEach(cb=>{
+    cb.addEventListener('change', ()=>{
+      const t = state.tasks.find(x=>x.id===cb.dataset.id);
+      if(t){
+        t.done = true;
+        haptic([10, 25, 12]);
+        toast('Task completed', 'check');
+        saveState(); render();
+      }
+    });
+  });
+  document.querySelectorAll('.supp-check').forEach(cb=>{
+    cb.addEventListener('change', ()=>{
+      const tk = todayKey();
+      if(!state.supplements.checked[tk]) state.supplements.checked[tk] = {};
+      state.supplements.checked[tk][cb.dataset.name] = cb.checked;
+      saveState();
+    });
+  });
+}
+
+/* ============ FOOD ============ */
+function foodDayLabel(dateStr){
+  if(dateStr === todayKey()) return 'Today';
+  const parts = (dateStr||'').split('-').map(Number);
+  if(parts.length!==3 || !parts[0]) return dateStr || '';
+  const d = new Date(parts[0], parts[1]-1, parts[2]);
+  return d.toLocaleDateString('en-US',{ weekday:'short', month:'short', day:'numeric' });
+}
+function renderFood(){
+  const fk = selectedFoodDate;
+  const meals = state.meals[fk] || [];
+  const cal = meals.reduce((s,m)=>s+Number(m.cal||0),0);
+  const water = state.water[fk] || 0;
+  const dayLabel = foodDayLabel(fk);
+
+  const allDays = Array.from(new Set([...Object.keys(state.meals), ...Object.keys(state.water)]))
+    .filter(k => (state.meals[k]||[]).length > 0 || (state.water[k]||0) > 0)
+    .sort((a,b)=>b.localeCompare(a));
+  const visibleDays = allDays.slice(0, foodDaysShown);
+  const hiddenDays = allDays.length - visibleDays.length;
+
+  return `
+    <header class="mb-6">
+      <h1 class="display font-bold text-3xl header-ink">Food Diary</h1>
+      <p class="display font-semibold text-lg header-ink mt-1">${dateNoYear(new Date())}</p>
+    </header>
+
+    <section class="card p-5 mb-5">
+      ${sprigSVG()}
+      <div class="flex items-center gap-2 mb-3">
+        <i data-lucide="calendar-days" class="w-5 h-5" style="color:var(--pop);"></i>
+        <h2 class="display font-extrabold text-2xl ink-text text-neutral-900">Diary Day · ${dayLabel}</h2>
+      </div>
+      <div class="flex flex-col gap-3.5 w-full max-w-full">
+        <input class="field" id="foodDate" type="date" value="${fk}" />
+        ${fk !== todayKey() ? `<button id="backToToday" class="btn-accent w-full max-w-full block py-3 font-extrabold ink-text" style="color:var(--ink);">Jump Back to Today</button>` : ''}
+      </div>
+    </section>
+
+    <section class="card p-5 mb-5">
+      <div class="flex items-center gap-2 mb-3">
+        <i data-lucide="utensils" class="w-5 h-5" style="color:var(--pop);"></i>
+        <h2 class="display font-extrabold text-2xl ink-text text-neutral-900">${editingMealId ? 'Edit Meal' : 'Add a Meal'}</h2>
+      </div>
+      <details class="macro-helper mb-4">
+        <summary class="sticky-row rounded-2xl px-4 py-3 flex items-center gap-2 cursor-pointer" style="background:var(--surface); list-style:none;">
+          <i data-lucide="calculator" class="w-4 h-4" style="color:var(--ink);"></i>
+          <span class="font-extrabold text-sm ink-text text-neutral-900 flex-1">Macro helper</span>
+          <i data-lucide="chevron-down" class="macro-chev w-4 h-4 flex-shrink-0" style="color:var(--ink);"></i>
+        </summary>
+        <div class="sticky-row rounded-2xl px-4 py-3.5 flex flex-col gap-2.5 mt-2" style="background:var(--surface);">
+          <p class="text-xs font-bold ink-text text-neutral-900" style="opacity:.55;">Describe a meal, copy the prompt to any AI, paste the reply back — it fills the macros for you.</p>
+          <textarea class="field" id="aiDesc" rows="3" placeholder="Describe the meal — e.g. 200g yogurt, 30g granola, 1 banana"></textarea>
+          <button type="button" id="aiCopy" class="pill w-full block py-2 font-extrabold text-xs ink-text" style="background:var(--card); color:var(--ink);">Copy prompt</button>
+          <textarea class="field" id="aiPaste" rows="3" placeholder="Paste the AI's reply here"></textarea>
+          <button type="button" id="aiFill" class="pill w-full block py-2 font-extrabold text-xs ink-text" style="background:var(--card); color:var(--ink);">Fill the form</button>
+        </div>
+      </details>
+
+      <form id="mealForm" class="flex flex-col gap-3.5 w-full max-w-full">
+        <input class="field" id="mealName" type="text" list="mealNameList" placeholder="Item name (e.g. Greek yogurt bowl)" value="${escapeHtml(mealDraft.name || '')}" required />
+        <datalist id="mealNameList">
+          ${[...new Set(Object.values(state.meals).flat().map(m=>m.name))].map(n=>`<option value="${escapeHtml(n)}"></option>`).join('')}
+        </datalist>
+        <input class="field" id="mealCal" type="number" min="0" step="0.1" inputmode="decimal" placeholder="Calories (kcal)" required value="${mealDraft.cal ?? ''}" />
+        <input class="field" id="mealP" type="number" min="0" step="0.1" inputmode="decimal" placeholder="Protein (g)" value="${mealDraft.p ?? ''}" />
+        <input class="field" id="mealC" type="number" min="0" step="0.1" inputmode="decimal" placeholder="Carbs (g)" value="${mealDraft.c ?? ''}" />
+        <input class="field" id="mealF" type="number" min="0" step="0.1" inputmode="decimal" placeholder="Fat (g)" value="${mealDraft.f ?? ''}" />
+        <button type="submit" class="btn-accent w-full max-w-full block py-3 font-extrabold text-neutral-900 ink-text" style="color:var(--ink);">${editingMealId ? 'Save Changes' : 'Log Meal'}</button>
+        ${editingMealId ? `<button type="button" id="cancelMealEdit" class="pill w-full max-w-full block py-2 font-extrabold text-xs ink-text" style="background:var(--surface); color:var(--ink);">Cancel edit</button>` : ''}
+      </form>
+    </section>
+
+    <section class="card-blob p-5 mb-5">
+      <div class="flex items-center gap-2 mb-3">
+        <i data-lucide="notebook-pen" class="w-5 h-5" style="color:var(--pop);"></i>
+        <h2 class="display font-extrabold text-2xl ink-text text-neutral-900">${dayLabel}'s Plate</h2>
+      </div>
+      <div class="flex flex-row items-baseline gap-1.5 mb-4">
+        <span class="display hero-num" style="font-size:2rem; line-height:1;">${fmt(cal)}</span>
+        <span class="ink-text text-neutral-900" style="font-size:.82rem; font-weight:600; opacity:.45;">kcal · ${fmt(meals.length)} item${meals.length===1?'':'s'}</span>
+      </div>
+      ${meals.length ? `
+        <div class="flex flex-col gap-2.5">
+          ${meals.map(m=>`
+            <div class="sticky-row rounded-2xl px-4 py-3 flex flex-col gap-1.5" style="background:var(--surface);">
+              <div class="flex flex-row justify-between items-start gap-2">
+                <span class="font-extrabold text-sm ink-text text-neutral-900 break-words">${escapeHtml(m.name)}</span>
+                <div class="flex flex-row gap-1.5 flex-shrink-0">
+                  <button class="edit-meal pill px-2 py-1" data-id="${m.id}" style="background:#F6E2AE;">
+                    <i data-lucide="pencil" class="w-3.5 h-3.5" style="color:#4A3A26;"></i>
+                  </button>
+                  <button class="del-meal pill px-2 py-1" data-id="${m.id}" style="background:#F5D3BD;">
+                    <i data-lucide="trash-2" class="w-3.5 h-3.5" style="color:#4A3A26;"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="tag" style="background:#F3D391; color:#4A3A26;">${fmt(m.cal)} kcal</span>
+                <span class="tag" style="background:#F5D3BD; color:#4A3A26;">P ${fmt(m.p)}</span>
+                <span class="tag" style="background:#F6E2AE; color:#4A3A26;">C ${fmt(m.c)}</span>
+                <span class="tag" style="background:#DFE3C8; color:#4A3A26;">F ${fmt(m.f)}</span>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      ` : `<div class="flex flex-col items-center text-center py-4 gap-2"><i data-lucide="utensils" class="w-8 h-8" style="color:var(--accent);"></i><p class="font-extrabold text-sm ink-text text-neutral-900">A fresh page</p><p class="text-xs font-bold ink-text text-neutral-900" style="opacity:.7;">Every day starts empty — log your first meal above.</p></div>`}
+    </section>
+
+    <section class="card p-5">
+      <div class="flex items-center gap-2 mb-3">
+        <i data-lucide="droplets" class="w-5 h-5" style="color:var(--pop);"></i>
+        <h2 class="display font-extrabold text-2xl ink-text text-neutral-900">Hydration</h2>
+      </div>
+      <div class="flex flex-row items-baseline gap-1.5 mb-3">
+        <span class="display hero-num" style="font-size:2rem; line-height:1;">${fmt(water)}</span>
+        <span class="ink-text text-neutral-900" style="font-size:.82rem; font-weight:600; opacity:.45;">ml of ${fmt(state.targets.water)}</span>
+      </div>
+      <div class="w-full rounded-full mb-3.5" style="height:.55rem; background:var(--surface); overflow:hidden;">
+        <div style="height:100%; width:${Math.min(100, state.targets.water ? (water / state.targets.water) * 100 : 0)}%; background:var(--accent); border-radius:9999px; transition:width .45s cubic-bezier(.4,0,.2,1);"></div>
+      </div>
+      <form id="waterForm" class="flex flex-col gap-3.5 w-full max-w-full">
+        <input class="field" id="waterMl" type="number" min="1" inputmode="numeric" placeholder="Exact milliliters (e.g. 350)" required />
+        <button type="submit" class="btn-accent w-full max-w-full block py-3 font-extrabold ink-text" style="color:var(--ink);">Log Water</button>
+      </form>
+      ${water > 0 ? `
+        <div class="flex flex-row gap-2.5 mt-3">
+          <button id="waterUndo" class="pill flex-1 py-2 font-extrabold text-xs ink-text" style="background:var(--surface); color:var(--ink);">Undo last</button>
+          <button id="waterReset" class="pill flex-1 py-2 font-extrabold text-xs ink-text" style="background:var(--surface); color:var(--ink);">Reset day</button>
+        </div>
+      ` : ''}
+    </section>
+
+    <section class="card-blob p-5 mt-5">
+      <div class="flex items-center gap-2 mb-3">
+        <i data-lucide="book-open" class="w-5 h-5" style="color:var(--pop);"></i>
+        <h2 class="display font-extrabold text-2xl ink-text text-neutral-900">Food History · ${fmt(allDays.length)} days</h2>
+      </div>
+      ${visibleDays.length ? `
+        <div class="flex flex-col gap-2.5">
+          ${visibleDays.map(k=>{
+            const dMeals = state.meals[k] || [];
+            const dCal = dMeals.reduce((s,m)=>s+Number(m.cal||0),0);
+            const dWater = state.water[k] || 0;
+            return `
+              <button class="food-day sticky-row rounded-2xl px-4 py-3 flex flex-col gap-1.5 text-left w-full" data-date="${k}" style="background:${k===fk ? 'var(--accent)' : 'var(--surface)'};">
+                <span class="font-extrabold text-sm ink-text text-neutral-900">${foodDayLabel(k)}</span>
+                <span class="flex flex-wrap gap-1.5">
+                  <span class="tag" style="background:#F3D391; color:#4A3A26;">${fmt(dCal)} kcal</span>
+                  <span class="tag" style="background:#F5D3BD; color:#4A3A26;">${fmt(dMeals.length)} ${dMeals.length===1?'meal':'meals'}</span>
+                  <span class="tag" style="background:#DFE3C8; color:#4A3A26;">${fmt(dWater)} ml</span>
+                </span>
+              </button>`;
+          }).join('')}
+        </div>
+        ${(hiddenDays > 0 || foodDaysShown > 7) ? `
+          <div class="flex flex-col gap-2.5 mt-4">
+            ${hiddenDays > 0 ? `
+              <button id="foodHistoryMore" class="btn-accent w-full max-w-full block py-3 font-extrabold ink-text" style="color:var(--ink);">Show 30 More Days (${fmt(hiddenDays)} left)</button>
+            ` : ''}
+            ${foodDaysShown > 7 ? `
+              <button id="foodHistoryCollapse" class="pill w-full max-w-full block py-3 font-extrabold ink-text" style="background:var(--card); color:var(--ink);">Collapse to Last 7 Days</button>
+            ` : ''}
+          </div>
+        ` : ''}
+      ` : `<p class="font-extrabold text-sm ink-text text-neutral-900">No logged days yet. Your food history builds itself as you log.</p>`}
+    </section>
+  `;
+}
+function bindFood(){
+  // ---- Macro helper: generate a prompt, then parse whatever the AI replies ----
+  const aiCopyBtn = document.getElementById('aiCopy');
+  if(aiCopyBtn){
+    aiCopyBtn.addEventListener('click', async ()=>{
+      const desc = (document.getElementById('aiDesc').value || '').trim();
+      if(!desc){ toast('Describe the meal first', 'circle-alert'); return; }
+      const prompt = `Estimate the nutrition for this meal:\n"${desc}"\n\nReply with ONLY this, no other text:\nName: <short name>\nCalories: <number>\nProtein: <number>\nCarbs: <number>\nFat: <number>\n\nUse grams for protein, carbs and fat. Numbers only, no units.`;
+      try{
+        await navigator.clipboard.writeText(prompt);
+        haptic(10);
+        toast('Prompt copied — paste it in your AI', 'copy');
+      }catch(err){
+        // iOS can block the clipboard API. Fall back to a selectable field
+        // so the prompt can still be copied by hand.
+        const el = document.getElementById('aiPaste');
+        if(el){
+          el.value = prompt;
+          el.focus();
+          el.setSelectionRange(0, el.value.length);
+        }
+        toast('Copy the text below, then paste the reply back', 'circle-alert');
+      }
+    });
+  }
+  const aiFillBtn = document.getElementById('aiFill');
+  if(aiFillBtn){
+    aiFillBtn.addEventListener('click', ()=>{
+      const raw = (document.getElementById('aiPaste').value || '').trim();
+      if(!raw){ toast('Paste the AI reply first', 'circle-alert'); return; }
+      // Pull the first number that follows each label, however the AI formatted it
+      const grab = (labels) => {
+        for(const label of labels){
+          // Match: label, optional markdown/punctuation, then the first number.
+          const re = new RegExp(label + String.raw`[^0-9\n]{0,12}([0-9]+(?:\.[0-9]+)?)`, 'i');
+          const m = raw.match(re);
+          if(m) return parseNum(m[1]);
+        }
+        return null;
+      };
+      const cal = grab(['calories', 'kcal', 'energy']);
+      const p   = grab(['protein']);
+      const c   = grab(['carbs', 'carbohydrates', 'carbohydrate']);
+      const fat = grab(['fat', 'fats']);
+      // Name: an explicit "Name:" line, else fall back to what was described
+      let name = '';
+      const nameMatch = raw.match(/name\s*[:=\-]?\s*\**\s*(.+)/i);
+      if(nameMatch) name = nameMatch[1].replace(/\*/g, '').trim();
+      if(!name) name = (document.getElementById('aiDesc').value || '').trim().slice(0, 60);
+
+      if(cal === null && p === null && c === null && fat === null){
+        toast("Couldn't read that — check the reply", 'circle-alert');
+        return;
+      }
+      editingMealId = null;
+      mealDraft = {
+        name,
+        cal: cal ?? '',
+        p: p ?? '',
+        c: c ?? '',
+        f: fat ?? ''
+      };
+      haptic([10, 30, 14]);
+      toast('Filled in — check and log', 'sparkles');
+      render();
+    });
+  }
+
+  const foodDateEl = document.getElementById('foodDate');
+  if(foodDateEl){
+    ['change','input','blur'].forEach(evt=>{
+      foodDateEl.addEventListener(evt, ()=>{
+        if(foodDateEl.value && foodDateEl.value !== selectedFoodDate){
+          selectedFoodDate = foodDateEl.value;
+          // Close any open meal editor: it belongs to the previous day
+          editingMealId = null;
+          mealDraft = {};
+          render();
+        }
+      });
+    });
+  }
+  const backBtn = document.getElementById('backToToday');
+  if(backBtn){
+    backBtn.addEventListener('click', ()=>{
+      selectedFoodDate = todayKey();
+      editingMealId = null;
+      mealDraft = {};
+      render();
+    });
+  }
+  document.getElementById('mealForm').addEventListener('submit', e=>{
+    e.preventDefault();
+    const liveEl = document.getElementById('foodDate');
+    if(liveEl && liveEl.value) selectedFoodDate = liveEl.value;
+    const fk = selectedFoodDate || todayKey();
+    if(!state.meals[fk]) state.meals[fk] = [];
+    // One decimal is plenty for food; 12.45 g of carbs is false precision.
+    const round1 = n => Math.round(n * 10) / 10;
+    const values = {
+      name: document.getElementById('mealName').value.trim(),
+      cal: round1(parseNum(document.getElementById('mealCal').value)),
+      p: round1(parseNum(document.getElementById('mealP').value)),
+      c: round1(parseNum(document.getElementById('mealC').value)),
+      f: round1(parseNum(document.getElementById('mealF').value))
+    };
+    if(editingMealId){
+      const idx = state.meals[fk].findIndex(m => m.id === editingMealId);
+      if(idx !== -1) state.meals[fk][idx] = Object.assign({}, state.meals[fk][idx], values);
+      editingMealId = null;
+      toast('Meal updated', 'check-circle-2');
+    }else{
+      state.meals[fk].push(Object.assign({ id: uid() }, values));
+      toast('Meal logged', 'utensils');
+    }
+    mealDraft = {};
+    saveState(); render();
+  });
+  document.querySelectorAll('.edit-meal').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      const fk = selectedFoodDate || todayKey();
+      const m = (state.meals[fk]||[]).find(x => x.id === b.dataset.id);
+      if(!m) return;
+      editingMealId = m.id;
+      mealDraft = { name:m.name, cal:m.cal, p:m.p, c:m.c, f:m.f };
+      render();
+      const form = document.getElementById('mealForm');
+      if(form){
+        const top = form.getBoundingClientRect().top + window.scrollY - 90;
+        window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+      }
+    });
+  });
+  const cancelMeal = document.getElementById('cancelMealEdit');
+  if(cancelMeal){
+    cancelMeal.addEventListener('click', ()=>{
+      editingMealId = null;
+      mealDraft = {};
+      render();
+    });
+  }
+  document.querySelectorAll('.del-meal').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      armDelete(b, ()=>{
+        const fk = selectedFoodDate;
+        if(editingMealId === b.dataset.id){ editingMealId = null; mealDraft = {}; }
+        state.meals[fk] = (state.meals[fk]||[]).filter(m=>m.id!==b.dataset.id);
+        if(!state.meals[fk].length) delete state.meals[fk];
+        haptic([25, 40, 25]);
+        toast('Meal deleted', 'trash-2');
+        saveState(); render();
+      });
+    });
+  });
+  document.getElementById('waterForm').addEventListener('submit', e=>{
+    e.preventDefault();
+    const fk = selectedFoodDate || todayKey();
+    const ml = parseNum(document.getElementById('waterMl').value);
+    if(ml>0){
+      state.water[fk] = (state.water[fk]||0) + ml;
+      if(!state.waterLog[fk]) state.waterLog[fk] = [];
+      state.waterLog[fk].push(ml);
+      toast(`+${fmt(ml)} ml`, 'droplets');
+      saveState(); render();
+    }
+  });
+  const waterUndoBtn = document.getElementById('waterUndo');
+  if(waterUndoBtn){
+    waterUndoBtn.addEventListener('click', ()=>{
+      const fk = selectedFoodDate || todayKey();
+      const log = state.waterLog[fk];
+      if(log && log.length){
+        const last = log.pop();
+        state.water[fk] = Math.max(0, (state.water[fk]||0) - last);
+        if(!log.length) delete state.waterLog[fk];
+        toast('Removed ' + fmt(last) + ' ml', 'undo-2');
+      }else{
+        // Older entries have no per-entry history, so there's nothing safe to undo.
+        toast('Nothing to undo — use Reset day', 'circle-alert');
+        return;
+      }
+      if(state.water[fk] === 0) delete state.water[fk];
+      saveState(); render();
+    });
+  }
+  const waterResetBtn = document.getElementById('waterReset');
+  if(waterResetBtn){
+    waterResetBtn.addEventListener('click', ()=>{
+      const fk = selectedFoodDate || todayKey();
+      delete state.water[fk];
+      delete state.waterLog[fk];
+      haptic([10, 25, 12]);
+      toast('Hydration reset', 'rotate-ccw');
+      saveState(); render();
+    });
+  }
+  document.querySelectorAll('.food-day').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      selectedFoodDate = b.dataset.date;
+      editingMealId = null;
+      mealDraft = {};
+      render(true);
+    });
+  });
+  const foodMoreBtn = document.getElementById('foodHistoryMore');
+  if(foodMoreBtn){
+    foodMoreBtn.addEventListener('click', ()=>{ foodDaysShown += 30; render(); });
+  }
+  const foodCollapseBtn = document.getElementById('foodHistoryCollapse');
+  if(foodCollapseBtn){
+    foodCollapseBtn.addEventListener('click', ()=>{ foodDaysShown = 7; render(); });
+  }
+}
+
+/* ============ TRAIN ============ */
+function paceString(totalSec, km){
+  if(!km || km<=0 || !totalSec || totalSec<=0) return '—';
+  const secPerKm = totalSec / km;
+  const m = Math.floor(secPerKm/60);
+  const s = Math.round(secPerKm % 60);
+  const ss = s===60 ? 0 : s;
+  const mm = s===60 ? m+1 : m;
+  return mm + ':' + String(ss).padStart(2,'0') + ' /km';
+}
+function parseDuration(str){
+  const s = String(str ?? '').trim();
+  if(!s) return 0;
+  const parts = s.split(':').map(p => parseNum(p));
+  if(parts.length === 3) return parts[0]*3600 + parts[1]*60 + parts[2];
+  if(parts.length === 2) return parts[0]*60 + parts[1];
+  if(parts.length === 1) return parts[0]*60; // bare number = minutes
+  return 0;
+}
+function secondsToInput(totalSec){
+  const s = Number(totalSec) || 0;
+  if(!s) return '';
+  const h = Math.floor(s/3600);
+  const m = Math.floor((s%3600)/60);
+  const sec = s % 60;
+  const pad = n => String(n).padStart(2,'0');
+  return h ? `${h}:${pad(m)}:${pad(sec)}` : `${m}:${pad(sec)}`;
+}
+function durationString(totalSec){
+  const h = Math.floor(totalSec/3600);
+  const m = Math.floor((totalSec%3600)/60);
+  const s = Math.round(totalSec%60);
+  return (h ? h + 'h ' : '') + m + 'm ' + s + 's';
+}
+function knownExercises(){
+  const names = new Set();
+  state.workouts.forEach(w=>{
+    // New flat segment shape
+    if(Array.isArray(w.segments)) w.segments.forEach(seg => (seg.items||[]).forEach(ex => ex.name && names.add(ex.name)));
+    const p = w.phases || {};
+    [p.warmups, p.mains, p.cools].forEach(group=>{
+      if(Array.isArray(group)) group.forEach(blk => (blk.items||[]).forEach(ex => ex.name && names.add(ex.name)));
+    });
+    // legacy shapes
+    [p.warmup, p.main, p.cool].forEach(items=>{
+      if(Array.isArray(items)) items.forEach(ex => ex.name && names.add(ex.name));
+    });
+  });
+  return [...names].sort();
+}
+// Colour a segment's label tag by keyword so rests, warm-ups and cool-downs
+// read at a glance, while everything else gets the honey "work" tone.
+function segColor(label){
+  const l = (label || '').toLowerCase();
+  if(/\brest\b|recover/.test(l))            return '#EAD9C6';
+  if(/warm[\s-]?up|warmup/.test(l))         return '#DFE3C8';
+  if(/cool[\s-]?down|cooldown|stretch/.test(l)) return '#D9D0E3';
+  return '#F6E2AE';
+}
+// The displayed title = free-text label + the structured "Every X for Y sets"
+// format (when set). Empty parts are dropped, so a half-filled Every never
+// prints stray words. This is the single source of truth for a segment's title.
+function segTitle(seg){
+  let base = (seg.label || '').trim();
+  const ev = seg.every;
+  if(ev && (String(ev.interval || '').trim() || String(ev.sets || '').trim())){
+    const iv = String(ev.interval || '').trim();
+    const st = String(ev.sets || '').trim();
+    const e = 'Every' + (iv ? ' ' + iv : '') + (st ? ' for ' + st + ' sets' : '');
+    base = base ? base + ' — ' + e : e;
+  }
+  const it = seg.intervals;
+  if(it && (String(it.reps || '').trim() || String(it.work || '').trim() || String(it.pace || '').trim())){
+    const reps = String(it.reps || '').trim();
+    const work = String(it.work || '').trim();
+    const pace = String(it.pace || '').trim();
+    let s = (reps && work) ? (reps + ' × ' + work) : (work || (reps ? reps + ' ×' : ''));
+    if(pace) s += (s ? ' @ ' : '') + pace;
+    if(s) base = base ? base + ' — ' + s : s;
+  }
+  return base;
+}
+function segmentBuilder(){
+  const isRun = trainMode==='running';
+  // Two quick-pick rows that fill the label: what the part IS (section) and how
+  // it's scored (format). Ordered to follow a session's natural flow.
+  const sectionChips = isRun
+    ? ['Warm-up','Main','Cool-down']
+    : ['Warm-up','Strength','Metcon','Accessory','Cool-down'];
+  const formatChips = isRun
+    ? ['Intervals','Tempo','Easy','Rest']
+    : ['For Time','AMRAP','EMOM','Every','RFT','Tabata','Rest'];
+
+  const exLine = (ex,i,seg,total,items) => {
+    const moveDelControls = `
+      <div class="flex flex-row items-center gap-1 flex-shrink-0">
+        ${total > 1 ? `
+          <button type="button" class="move-ex pill px-1 py-0.5" data-seg="${seg}" data-index="${i}" data-dir="-1" style="background:var(--card); ${i === 0 ? 'opacity:.3;' : ''}" ${i === 0 ? 'disabled' : ''}>
+            <i data-lucide="chevron-up" class="w-3 h-3" style="color:#4A3A26;"></i>
+          </button>
+          <button type="button" class="move-ex pill px-1 py-0.5" data-seg="${seg}" data-index="${i}" data-dir="1" style="background:var(--card); ${i === total - 1 ? 'opacity:.3;' : ''}" ${i === total - 1 ? 'disabled' : ''}>
+            <i data-lucide="chevron-down" class="w-3 h-3" style="color:#4A3A26;"></i>
+          </button>
+        ` : ''}
+        <button type="button" class="del-ex pill px-1.5 py-0.5" data-seg="${seg}" data-index="${i}" style="background:#F5D3BD;">
+          <i data-lucide="trash-2" class="w-3 h-3" style="color:#4A3A26;"></i>
+        </button>
+      </div>`;
+    // A rest is a step in the sequence, not an exercise — its own dashed row with
+    // an inline duration field. Moves and deletes like any other line.
+    if(ex.isRest){
+      return `
+      <div class="flex flex-row items-center justify-between gap-2 px-2 py-1" style="border-top:1.5px dashed color-mix(in srgb, var(--ink) 22%, transparent); border-bottom:1.5px dashed color-mix(in srgb, var(--ink) 22%, transparent);">
+        <div class="flex flex-row items-center gap-2">
+          <i data-lucide="pause" class="w-3.5 h-3.5" style="color:#4A3A26;"></i>
+          <span class="text-xs font-extrabold ink-text text-neutral-900" style="text-transform:uppercase; letter-spacing:.05em; opacity:.7;">Rest</span>
+          <input class="seg-rest-dur" data-seg="${seg}" data-index="${i}" type="text" placeholder="mm:ss" value="${escapeHtml(ex.dur || '')}" style="width:5.2rem; background:var(--card); border:1px solid color-mix(in srgb, var(--ink) 15%, transparent); border-radius:.6rem; padding:.28rem .55rem; font-weight:600; color:inherit; outline:none;" />
+        </div>
+        ${moveDelControls}
+      </div>`;
+    }
+    const linkedAbove = !!ex.superset;
+    const linkedBelow = !!(items && items[i+1] && items[i+1].superset);
+    const inChain = linkedAbove || linkedBelow;
+    const detail = ex.weight || ex.pace || '';
+    return `
+    <div class="flex flex-row items-center justify-between gap-2 px-2" style="${inChain ? 'border-left:2.5px solid var(--accent); padding-left:.5rem; margin-left:.15rem;' : ''}">
+      <span class="text-xs font-bold ink-text text-neutral-900 break-words">
+        ${inChain ? '' : '• '}${escapeHtml(ex.name)}${ex.reps ? ' — ' + escapeHtml(ex.reps) : ''}${detail ? ' @ ' + escapeHtml(detail) : ''}
+        ${(inChain && !linkedAbove) ? '<span class="ink-text text-neutral-900" style="font-size:.55rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; opacity:.5; margin-left:.3rem;">superset</span>' : ''}
+      </span>
+      ${moveDelControls}
+    </div>`;
+  };
+
+  const total = segDraft.length;
+  return `
+    <label class="font-extrabold text-xs ink-text text-neutral-900">Session structure (what you actually did)</label>
+    <p class="text-xs font-bold ink-text text-neutral-900" style="opacity:.6; margin-top:-.35rem;">Each step is one segment — an AMRAP, a rest, a row. Add them in the order you did them.</p>
+    <datalist id="exerciseList">
+      ${knownExercises().map(n=>`<option value="${escapeHtml(n)}"></option>`).join('')}
+    </datalist>
+    ${segDraft.map((seg,si)=>{
+      const composedTitle = segTitle(seg);
+      const labelTxt = composedTitle || ('Segment ' + (si+1));
+      return `
+      <div class="sticky-row rounded-2xl px-3 py-3 flex flex-col gap-2.5" style="background:var(--surface);">
+        <div class="flex flex-row items-center justify-between gap-2">
+          <span class="tag" style="background:${segColor(composedTitle)}; color:#4A3A26;">${escapeHtml(labelTxt)}${(!seg.every && parseInt(seg.rounds,10) > 1) ? ' × ' + fmt(parseInt(seg.rounds,10)) : ''}</span>
+          <div class="flex flex-row items-center gap-1 flex-shrink-0">
+            ${total > 1 ? `
+              <button type="button" class="move-seg pill px-1 py-0.5" data-index="${si}" data-dir="-1" style="background:var(--card); ${si === 0 ? 'opacity:.3;' : ''}" ${si === 0 ? 'disabled' : ''}>
+                <i data-lucide="chevron-up" class="w-3 h-3" style="color:#4A3A26;"></i>
+              </button>
+              <button type="button" class="move-seg pill px-1 py-0.5" data-index="${si}" data-dir="1" style="background:var(--card); ${si === total - 1 ? 'opacity:.3;' : ''}" ${si === total - 1 ? 'disabled' : ''}>
+                <i data-lucide="chevron-down" class="w-3 h-3" style="color:#4A3A26;"></i>
+              </button>
+              <button type="button" class="del-seg pill px-1.5 py-0.5" data-index="${si}" style="background:#F5D3BD;"><i data-lucide="trash-2" class="w-3 h-3" style="color:#4A3A26;"></i></button>
+            ` : ''}
+          </div>
+        </div>
+        <input class="field seg-label" data-seg="${si}" type="text" placeholder="Part name & format (e.g. Metcon — AMRAP 10 min, Rest 2:00)" value="${escapeHtml(seg.label || '')}" />
+        ${seg.every ? `
+          <div class="flex flex-row items-center flex-wrap gap-2 rounded-2xl px-3 py-2.5" style="background:var(--card); border:1px solid color-mix(in srgb, var(--ink) 12%, transparent);">
+            <span class="text-xs font-extrabold ink-text text-neutral-900">Every</span>
+            <input class="seg-every-int" data-seg="${si}" type="text" inputmode="text" placeholder="mm:ss" value="${escapeHtml(seg.every.interval || '')}" style="width:4.6rem; text-align:center; background:var(--surface); border:1px solid color-mix(in srgb, var(--ink) 15%, transparent); border-radius:.6rem; padding:.3rem; font-weight:600; color:inherit; outline:none;" />
+            <span class="text-xs font-extrabold ink-text text-neutral-900">for</span>
+            <input class="seg-every-sets" data-seg="${si}" type="number" min="1" inputmode="numeric" placeholder="#" value="${escapeHtml(seg.every.sets || '')}" style="width:3.1rem; text-align:center; background:var(--surface); border:1px solid color-mix(in srgb, var(--ink) 15%, transparent); border-radius:.6rem; padding:.3rem; font-weight:600; color:inherit; outline:none;" />
+            <span class="text-xs font-extrabold ink-text text-neutral-900">sets</span>
+            <button type="button" class="seg-every-remove pill px-1.5 py-0.5 flex-shrink-0" data-seg="${si}" style="margin-left:auto; background:#F5D3BD;"><i data-lucide="x" class="w-3 h-3" style="color:#4A3A26;"></i></button>
+          </div>
+        ` : ''}
+        ${seg.intervals ? `
+          <div class="flex flex-row items-center flex-wrap gap-2 rounded-2xl px-3 py-2.5" style="background:var(--card); border:1px solid color-mix(in srgb, var(--ink) 12%, transparent);">
+            <input class="seg-int-reps" data-seg="${si}" type="number" min="1" inputmode="numeric" placeholder="#" value="${escapeHtml(seg.intervals.reps || '')}" style="width:3.1rem; text-align:center; background:var(--surface); border:1px solid color-mix(in srgb, var(--ink) 15%, transparent); border-radius:.6rem; padding:.3rem; font-weight:600; color:inherit; outline:none;" />
+            <span class="text-xs font-extrabold ink-text text-neutral-900">×</span>
+            <input class="seg-int-work" data-seg="${si}" type="text" placeholder="dist / time" value="${escapeHtml(seg.intervals.work || '')}" style="width:5.2rem; text-align:center; background:var(--surface); border:1px solid color-mix(in srgb, var(--ink) 15%, transparent); border-radius:.6rem; padding:.3rem; font-weight:600; color:inherit; outline:none;" />
+            <span class="text-xs font-extrabold ink-text text-neutral-900">@</span>
+            <input class="seg-int-pace" data-seg="${si}" type="text" placeholder="pace" value="${escapeHtml(seg.intervals.pace || '')}" style="width:6rem; text-align:center; background:var(--surface); border:1px solid color-mix(in srgb, var(--ink) 15%, transparent); border-radius:.6rem; padding:.3rem; font-weight:600; color:inherit; outline:none;" />
+            <button type="button" class="seg-int-remove pill px-1.5 py-0.5 flex-shrink-0" data-seg="${si}" style="margin-left:auto; background:#F5D3BD;"><i data-lucide="x" class="w-3 h-3" style="color:#4A3A26;"></i></button>
+          </div>
+        ` : ''}
+        ${(() => {
+          const chipRow = (caption, arr) => `
+            <div class="flex flex-col gap-1">
+              <span class="ink-text text-neutral-900" style="font-size:.58rem; font-weight:700; letter-spacing:.07em; text-transform:uppercase; opacity:.5;">${caption}</span>
+              <div class="flex flex-row flex-wrap gap-1.5">
+                ${arr.map(c=>`<button type="button" class="seg-chip pill px-2.5 py-1 text-xs font-bold ink-text" data-seg="${si}" data-chip="${escapeHtml(c)}" style="background:var(--card); color:var(--ink);">${c}</button>`).join('')}
+              </div>
+            </div>`;
+          return `<div class="flex flex-col gap-2">${chipRow('Section', sectionChips)}${chipRow('Format', formatChips)}</div>`;
+        })()}
+        ${(seg.every || seg.intervals) ? '' : `
+        <div class="flex flex-row items-center gap-1.5 flex-shrink-0">
+          <span class="text-xs font-bold ink-text text-neutral-900">Rounds ×</span>
+          <input class="seg-rounds" data-seg="${si}" type="number" min="1" inputmode="numeric" placeholder="1" value="${seg.rounds}" style="width:3.2rem; text-align:center; background:var(--card); border:1px solid color-mix(in srgb, var(--ink) 15%, transparent); border-radius:.6rem; padding:.3rem; font-weight:600; color:inherit; outline:none;" />
+          <span class="text-xs font-bold ink-text text-neutral-900" style="opacity:.55;">leave blank for a plain step</span>
+        </div>`}
+        ${seg.items.length ? `<div class="flex flex-col gap-1.5">${seg.items.map((ex,i)=>exLine(ex,i,si,seg.items.length,seg.items)).join('')}</div>` : ''}
+        <input class="field seg-name" data-seg="${si}" type="text" list="exerciseList" placeholder="${isRun ? 'Name — optional (e.g. Run, Strides)' : 'Exercise (e.g. Wall ball)'}" />
+        <input class="field seg-reps" data-seg="${si}" type="text" placeholder="${isRun ? 'Distance (e.g. 2km, 800m)' : 'Amount — reps, distance, time or cal (e.g. 20 reps, 500m)'}" />
+        <div class="flex flex-row flex-wrap gap-1.5" style="margin-top:-.35rem;">
+          <span class="ink-text text-neutral-900" style="font-size:.58rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; opacity:.4; align-self:center; margin-right:.15rem;">unit</span>
+          ${(isRun ? ['km','m'] : ['reps','m','km','cal','sec','min']).map(u=>`<button type="button" class="amt-chip pill px-2 py-0.5 text-xs font-bold ink-text" data-seg="${si}" data-unit="${u}" style="background:var(--card); color:var(--ink);">${u}</button>`).join('')}
+        </div>
+        <input class="field seg-detail" data-seg="${si}" type="text" placeholder="${isRun ? 'Time or pace (e.g. 13:08 or 6:34 /km — optional)' : 'Weight (e.g. 14 lbs, 30 kg, BW — optional)'}" />
+        ${seg.items.length ? `
+          <label class="flex flex-row items-center gap-2 px-2 cursor-pointer">
+            <input type="checkbox" class="chunky seg-super" data-seg="${si}" style="width:1.15rem; height:1.15rem;" />
+            <span class="text-xs font-bold ink-text text-neutral-900">Superset with previous</span>
+          </label>
+        ` : ''}
+        <div class="flex flex-row gap-2 w-full">
+          <button type="button" class="add-ex pill block py-2 font-extrabold text-xs ink-text" data-seg="${si}" style="flex:1; min-width:0; background:var(--card); color:var(--ink);">+ Add exercise</button>
+          <button type="button" class="add-rest pill block py-2 font-extrabold text-xs ink-text" data-seg="${si}" style="flex:0 0 auto; padding-left:.9rem; padding-right:.9rem; background:var(--card); color:var(--ink);">+ Rest</button>
+        </div>
+      </div>`;
+    }).join('')}
+    <button type="button" class="add-seg btn-accent w-full block py-2.5 font-extrabold text-xs ink-text" style="color:var(--ink);">+ Add segment</button>
+  `;
+}
+function renderTrain(){
+  const modes = [
+    { id:'running', label:'Run', icon:'footprints' },
+    { id:'crossfit', label:'CrossFit', icon:'flame' },
+    { id:'strength', label:'Strength', icon:'dumbbell' },
+    { id:'accessory', label:'Skills', icon:'sparkles' }
+  ];
+  let form = '';
+  if(trainMode==='running'){
+    form = `
+      <form id="trainForm" class="flex flex-col gap-3.5 w-full max-w-full">
+        <label class="font-extrabold text-xs ink-text text-neutral-900">Workout date</label>
+        <input class="field" id="trainDate" type="date" value="${selectedTrainDate}" />
+        <label class="font-extrabold text-xs ink-text text-neutral-900">Session totals (for average pace)</label>
+        <input class="field" id="runDist" type="number" min="0" step="0.01" inputmode="decimal" placeholder="Total distance (km)" value="${editFields.dist ?? ''}" required />
+        <label class="font-extrabold text-xs ink-text text-neutral-900">Total time</label>
+        <div class="flex flex-row gap-2 w-full">
+          <div class="flex flex-col items-center" style="flex:1; min-width:0;">
+            <input class="field" id="runH" type="number" min="0" inputmode="numeric" placeholder="0" value="${editFields.h ?? ''}" style="text-align:center;" />
+            <span class="ink-text text-neutral-900" style="font-size:.6rem; font-weight:600; opacity:.55; margin-top:.25rem; letter-spacing:.05em;">HRS</span>
+          </div>
+          <div class="flex flex-col items-center" style="flex:1; min-width:0;">
+            <input class="field" id="runM" type="number" min="0" max="59" inputmode="numeric" placeholder="0" value="${editFields.m ?? ''}" style="text-align:center;" />
+            <span class="ink-text text-neutral-900" style="font-size:.6rem; font-weight:600; opacity:.55; margin-top:.25rem; letter-spacing:.05em;">MIN</span>
+          </div>
+          <div class="flex flex-col items-center" style="flex:1; min-width:0;">
+            <input class="field" id="runS" type="number" min="0" max="59" inputmode="numeric" placeholder="0" value="${editFields.s ?? ''}" style="text-align:center;" />
+            <span class="ink-text text-neutral-900" style="font-size:.6rem; font-weight:600; opacity:.55; margin-top:.25rem; letter-spacing:.05em;">SEC</span>
+          </div>
+        </div>
+        <input class="field" id="runNote" type="text" placeholder="Notes (route, feel, shoes...)" value="${escapeHtml(editFields.note || '')}" />
+        ${segmentBuilder()}
+        <label class="sticky-row rounded-2xl px-4 py-3 flex flex-row items-center justify-between gap-2 cursor-pointer" style="background:var(--surface);">
+          <span class="font-extrabold text-sm ink-text text-neutral-900">Planned (not done yet)</span>
+          <input type="checkbox" class="chunky" id="trainPlanned" ${editFields.planned ? 'checked' : ''} />
+        </label>
+        <button type="submit" class="btn-accent w-full max-w-full block py-3 font-extrabold ink-text" style="color:var(--ink);">${editingWorkoutId ? 'Save Changes' : 'Log Run'}</button>
+      </form>`;
+  }else if(trainMode==='crossfit'){
+    form = `
+      <form id="trainForm" class="flex flex-col gap-3.5 w-full max-w-full">
+        <label class="font-extrabold text-xs ink-text text-neutral-900">Workout date</label>
+        <input class="field" id="trainDate" type="date" value="${selectedTrainDate}" />
+        <input class="field" id="wodName" type="text" placeholder="WOD name (e.g. Fran, Metcon Tuesday)" value="${escapeHtml(editFields.title || '')}" required />
+        <input class="field" id="wodScore" type="text" placeholder="Score / time (e.g. 7:42 Rx)" value="${escapeHtml(editFields.score || '')}" />
+        <textarea class="field" id="wodNotes" rows="4" placeholder="Workout details & notes">${escapeHtml(editFields.notes || '')}</textarea>
+        ${segmentBuilder()}
+        <label class="sticky-row rounded-2xl px-4 py-3 flex flex-row items-center justify-between gap-2 cursor-pointer" style="background:var(--surface);">
+          <span class="font-extrabold text-sm ink-text text-neutral-900">Planned (not done yet)</span>
+          <input type="checkbox" class="chunky" id="trainPlanned" ${editFields.planned ? 'checked' : ''} />
+        </label>
+        <button type="submit" class="btn-accent w-full max-w-full block py-3 font-extrabold ink-text" style="color:var(--ink);">${editingWorkoutId ? 'Save Changes' : 'Log WOD'}</button>
+      </form>`;
+  }else if(trainMode==='strength'){
+    form = `
+      <form id="trainForm" class="flex flex-col gap-3.5 w-full max-w-full">
+        <label class="font-extrabold text-xs ink-text text-neutral-900">Workout date</label>
+        <input class="field" id="trainDate" type="date" value="${selectedTrainDate}" />
+        <input class="field" id="strTitle" type="text" placeholder="Session name (e.g. Lower body, Push day)" value="${escapeHtml(editFields.title || '')}" required />
+        <input class="field" id="strNotes" type="text" placeholder="Notes (optional)" value="${escapeHtml(editFields.notes || '')}" />
+        ${segmentBuilder()}
+        <label class="sticky-row rounded-2xl px-4 py-3 flex flex-row items-center justify-between gap-2 cursor-pointer" style="background:var(--surface);">
+          <span class="font-extrabold text-sm ink-text text-neutral-900">Planned (not done yet)</span>
+          <input type="checkbox" class="chunky" id="trainPlanned" ${editFields.planned ? 'checked' : ''} />
+        </label>
+        <button type="submit" class="btn-accent w-full max-w-full block py-3 font-extrabold ink-text" style="color:var(--ink);">${editingWorkoutId ? 'Save Changes' : 'Log Strength Session'}</button>
+      </form>`;
+  }else{
+    form = `
+      <form id="trainForm" class="flex flex-col gap-3.5 w-full max-w-full">
+        <label class="font-extrabold text-xs ink-text text-neutral-900">Workout date</label>
+        <input class="field" id="trainDate" type="date" value="${selectedTrainDate}" />
+        <input class="field" id="accName" type="text" placeholder="Session name (e.g. Gymnastics skills)" value="${escapeHtml(editFields.title || '')}" required />
+        <input class="field" id="accNotes" type="text" placeholder="Notes (optional)" value="${escapeHtml(editFields.notes || '')}" />
+        ${segmentBuilder()}
+        <label class="sticky-row rounded-2xl px-4 py-3 flex flex-row items-center justify-between gap-2 cursor-pointer" style="background:var(--surface);">
+          <span class="font-extrabold text-sm ink-text text-neutral-900">Planned (not done yet)</span>
+          <input type="checkbox" class="chunky" id="trainPlanned" ${editFields.planned ? 'checked' : ''} />
+        </label>
+        <button type="submit" class="btn-accent w-full max-w-full block py-3 font-extrabold ink-text" style="color:var(--ink);">${editingWorkoutId ? 'Save Changes' : 'Log Skills Session'}</button>
+      </form>`;
+  }
+
+  const q = diarySearch.trim().toLowerCase();
+  const matches = (w) => {
+    if(!q) return true;
+    const hay = [];
+    hay.push(w.title || '', w.notes || '', w.note || '', w.score || '', w.type || '');
+    // New flat segment shape
+    if(Array.isArray(w.segments)) w.segments.forEach(seg=>{
+      hay.push(segTitle(seg));
+      (seg.items||[]).forEach(ex => hay.push(ex.name||'', ex.reps||'', ex.weight||'', ex.pace||''));
+    });
+    const p = w.phases || {};
+    // New block shape
+    [p.warmups, p.mains, p.cools].forEach(group=>{
+      if(Array.isArray(group)) group.forEach(blk=>{
+        hay.push(blk.name || '', blk.format || '', blk.cap || '');
+        (blk.items||[]).forEach(ex => hay.push(ex.name||'', ex.reps||'', ex.weight||'', ex.pace||''));
+      });
+    });
+    // Legacy flat shape — otherwise older workouts would be unsearchable
+    [p.warmup, p.main, p.cool].forEach(items=>{
+      if(Array.isArray(items)) items.forEach(ex => hay.push(ex.name||'', ex.reps||'', ex.weight||'', ex.detail||''));
+    });
+    return hay.join(' ').toLowerCase().includes(q);
+  };
+  const allWorkouts = [...state.workouts]
+    .filter(matches)
+    .sort((a,b)=> (b.date||'').localeCompare(a.date||'') || (b.created-a.created));
+  const completedCount = allWorkouts.filter(w=>!w.planned).length;
+  const plannedCount = allWorkouts.filter(w=>w.planned).length;
+  const sorted = allWorkouts;
+  const groups = [];
+  sorted.forEach(w=>{
+    const g = groups.find(x=>x.date===w.date);
+    if(g) g.items.push(w); else groups.push({ date:w.date, items:[w] });
+  });
+  const visibleGroups = diarySearch.trim() ? groups : groups.slice(0, trainDaysShown);
+  const hiddenDayCount = diarySearch.trim() ? 0 : groups.length - visibleGroups.length;
+  const typeColor = { running:'#F6E2AE', crossfit:'#F5D3BD', strength:'#D9D0E3', accessory:'#DFE3C8' };
+  const typeLabel = { running:'Run', crossfit:'CrossFit', strength:'Strength', accessory:'Skills' };
+  function prettyDay(dateStr){
+    const parts = (dateStr||'').split('-').map(Number);
+    if(parts.length!==3 || !parts[0]) return dateStr || '';
+    const d = new Date(parts[0], parts[1]-1, parts[2]);
+    const label = d.toLocaleDateString('en-US',{ weekday:'short', month:'short', day:'numeric' });
+    return dateStr===todayKey() ? label + ' · Today' : label;
+  }
+
+  return `
+    <header class="mb-6">
+      <h1 class="display font-bold text-3xl header-ink">Training Log</h1>
+      <p class="display font-semibold text-lg header-ink mt-1">${dateNoYear(new Date())}</p>
+    </header>
+
+    ${pendingPR ? `
+      <section class="card p-5 mb-5" style="background:var(--accent);">
+        <div class="flex items-center gap-2 mb-2">
+          <i data-lucide="party-popper" class="w-5 h-5" style="color:var(--pop);"></i>
+          <h2 class="display font-extrabold text-2xl ink-text text-neutral-900">New Personal Best!</h2>
+        </div>
+        <p class="font-extrabold text-sm ink-text text-neutral-900 mb-3">Your fastest pace ever: ${escapeHtml(pendingPR.value)}. Save it to your records?</p>
+        <div class="flex flex-row gap-2.5">
+          <button id="savePendingPR" class="pill flex-1 py-2.5 font-extrabold text-xs ink-text" style="background:var(--card); color:var(--ink);">Save to PRs</button>
+          <button id="dismissPendingPR" class="pill flex-1 py-2.5 font-extrabold text-xs ink-text" style="background:transparent; color:var(--ink);">Not now</button>
+        </div>
+      </section>
+    ` : ''}
+
+    <div class="flex flex-row justify-center gap-2 w-full mb-5">
+      ${modes.map(m=>`        <button class="mode-pill pill px-2 py-2 flex flex-col items-center gap-0.5 flex-1" data-mode="${m.id}" style="background:${trainMode===m.id ? 'var(--accent)' : 'var(--surface)'};">
+          <i data-lucide="${m.icon}" class="w-4 h-4" style="color:var(--ink);"></i>
+          <span class="text-xs font-extrabold ink-text" style="color:var(--ink);">${m.label}</span>
+        </button>
+      `).join('')}
+    </div>
+
+    <section class="card p-5 mb-5">
+      ${sprigSVG()}
+      <h2 class="display font-extrabold text-2xl ink-text text-neutral-900 mb-3">${editingWorkoutId ? 'Edit Workout' : (trainMode ? 'New ' + (trainMode==='running'?'Run':trainMode==='crossfit'?'CrossFit Session':trainMode==='strength'?'Strength Session':'Skills Work') : 'Choose a workout type')}</h2>
+      ${editingWorkoutId ? `<button id="cancelEdit" class="pill w-full max-w-full block py-2 font-extrabold text-xs mb-3 ink-text" style="background:var(--card); color:var(--ink);">Cancel edit</button>` : ''}
+      ${trainMode ? form : `<p class="font-extrabold text-sm ink-text text-neutral-900">Pick Run, CrossFit, Strength, or Skills above to start logging.</p>`}
+    </section>
+
+    <section class="card-blob p-5">
+      <div class="flex items-center gap-2 mb-3">
+        <i data-lucide="book-open" class="w-5 h-5" style="color:var(--pop);"></i>
+        <h2 class="display font-extrabold text-2xl ink-text text-neutral-900">Training Diary</h2>
+        ${plannedCount ? `<span class="tag" style="background:transparent; border:1.5px dashed color-mix(in srgb, var(--ink) 40%, transparent); color:#4A3A26;">${fmt(plannedCount)} planned</span>` : ''}
+      </div>
+      <input class="field mb-4" id="diarySearch" type="search" placeholder="Search exercises, notes, sessions..." value="${escapeHtml(diarySearch)}" />
+      ${completedCount ? `
+        <div class="flex flex-row items-baseline gap-1.5 mb-4">
+          <span class="display hero-num" style="font-size:2rem; line-height:1;">${fmt(completedCount)}</span>
+          <span class="ink-text text-neutral-900" style="font-size:.82rem; font-weight:600; opacity:.45;">${diarySearch.trim() ? `result${completedCount===1?'':'s'}` : `session${completedCount===1?'':'s'} logged`}</span>
+        </div>
+      ` : ''}
+      ${visibleGroups.length ? `
+        <div class="flex flex-col gap-4">
+          ${visibleGroups.map(g=>`
+            <div>
+              <span class="tag mb-2" style="background:var(--accent); color:#4A3A26;">${prettyDay(g.date)}</span>
+              <div class="flex flex-col gap-2.5 mt-2">
+                ${g.items.map(w=>{
+                  let body = '';
+                  if(w.type==='running'){
+                    body = `<div class="flex flex-wrap gap-1.5 mt-1">
+                      <span class="tag" style="background:#F3D391; color:#4A3A26;">${w.dist} km</span>
+                      ${w.seconds ? `<span class="tag" style="background:#F6E2AE; color:#4A3A26;">${durationString(w.seconds)}</span>` : ''}
+                      ${(w.seconds && w.dist) ? `<span class="tag" style="background:#DFE3C8; color:#4A3A26;">avg ${paceString(w.seconds, w.dist)}</span>` : ''}
+                    </div>${w.note ? `<p class="text-xs font-bold mt-1.5 break-words whitespace-pre-wrap ink-text text-neutral-900">${escapeHtml(w.note)}</p>` : ''}`;
+                  }else if(w.type==='crossfit'){
+                    body = `${w.score ? `<span class="tag mt-1" style="background:#F3D391; color:#4A3A26;">${escapeHtml(w.score)}</span>` : ''}
+                      ${w.notes ? `<p class="text-xs font-bold mt-1.5 break-words whitespace-pre-wrap ink-text text-neutral-900">${escapeHtml(w.notes)}</p>` : ''}`;
+                  }else if(w.type==='strength'){
+                    body = `${w.notes ? `<p class="text-xs font-bold mt-1.5 break-words whitespace-pre-wrap ink-text text-neutral-900">${escapeHtml(w.notes)}</p>` : ''}`;
+                  }else{
+                    body = `${w.notes ? `<p class="text-xs font-bold mt-1.5 break-words whitespace-pre-wrap ink-text text-neutral-900">${escapeHtml(w.notes)}</p>` : ''}`;
+                  }
+                  return `
+                    <div class="sticky-row rounded-2xl px-4 py-3 flex flex-col" style="background:var(--surface);">
+                      <div class="flex flex-row justify-between items-start gap-2">
+                        <span class="font-extrabold text-sm ink-text text-neutral-900 break-words">${escapeHtml(w.title || (typeLabel[w.type] || "Workout"))}</span>
+                        <div class="flex flex-row gap-1.5 flex-shrink-0">
+                          <button class="dup-workout pill px-2 py-1" data-id="${w.id}" style="background:#DFE3C8;">
+                            <i data-lucide="copy" class="w-3.5 h-3.5" style="color:#4A3A26;"></i>
+                          </button>
+                          <button class="edit-workout pill px-2 py-1" data-id="${w.id}" style="background:#F6E2AE;">
+                            <i data-lucide="pencil" class="w-3.5 h-3.5" style="color:#4A3A26;"></i>
+                          </button>
+                          <button class="del-workout pill px-2 py-1" data-id="${w.id}" style="background:#F5D3BD;">
+                            <i data-lucide="trash-2" class="w-3.5 h-3.5" style="color:#4A3A26;"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="flex flex-wrap gap-1.5 mt-1">
+                        <span class="tag" style="background:${typeColor[w.type] || '#EBD9C3'}; color:#4A3A26;">${typeLabel[w.type] || w.type}</span>
+                        ${w.planned ? `<span class="tag" style="background:transparent; border:1.5px dashed color-mix(in srgb, var(--ink) 40%, transparent); color:#4A3A26;">◷ Planned</span>` : ''}
+                      </div>
+                      ${body}
+                      ${(() => {
+                        const exText = ex => `${escapeHtml(ex.name)}${ex.reps ? ' — ' + escapeHtml(ex.reps) : ''}${(ex.weight || ex.pace) ? ' @ ' + escapeHtml(ex.weight || ex.pace) : ''}${ex.rest ? ' · rest ' + escapeHtml(ex.rest) : ''}`;
+                        const restLine = ex => `<div style="border-top:1.5px dashed color-mix(in srgb, var(--ink) 22%, transparent); border-bottom:1.5px dashed color-mix(in srgb, var(--ink) 22%, transparent); padding:.2rem 0; margin:.1rem 0;"><span class="text-xs font-extrabold ink-text text-neutral-900" style="text-transform:uppercase; letter-spacing:.05em; opacity:.6;">⏸ Rest${ex.dur ? ' ' + escapeHtml(ex.dur) : ''}</span></div>`;
+                        // Group consecutive superset exercises so a chain reads as one linked pair.
+                        // A rest row always stands alone and breaks any chain.
+                        const renderItems = (items) => {
+                          const chunks = [];
+                          items.forEach(ex => {
+                            const last = chunks[chunks.length - 1];
+                            const canLink = ex.superset && !ex.isRest && last && !last[0].isRest;
+                            if(canLink){ last.push(ex); }
+                            else { chunks.push([ex]); }
+                          });
+                          return chunks.map(chunk => {
+                            if(chunk.length === 1){
+                              const ex = chunk[0];
+                              if(ex.isRest) return restLine(ex);
+                              return `<span class="text-xs font-bold ink-text text-neutral-900 break-words">• ${exText(ex)}</span>`;
+                            }
+                            return `<div style="border-left:2.5px solid var(--accent); padding-left:.55rem; margin:.15rem 0;">
+                              <span class="ink-text text-neutral-900" style="font-size:.58rem; font-weight:700; letter-spacing:.07em; text-transform:uppercase; opacity:.55;">Superset</span>
+                              <div class="flex flex-col gap-0.5">
+                                ${chunk.map(ex => `<span class="text-xs font-bold ink-text text-neutral-900 break-words">${exText(ex)}</span>`).join('')}
+                              </div>
+                            </div>`;
+                          }).join('');
+                        };
+                        // New flat segment shape — a labelled step per row
+                        if(Array.isArray(w.segments) && w.segments.length){
+                          const parts = w.segments
+                            .filter(s => (s.label && s.label.trim()) || (s.items && s.items.length) || s.every || s.intervals)
+                            .map(seg=>{
+                              const composed = segTitle(seg);
+                              const title = composed ? escapeHtml(composed) : 'Segment';
+                              const rnd = (!seg.every && !seg.intervals && seg.rounds > 1) ? ' × ' + fmt(seg.rounds) + ' rounds' : '';
+                              return `<div>
+                                <span class="tag" style="background:${segColor(composed)}; color:#4A3A26;">${title}${rnd}</span>
+                                ${(seg.items && seg.items.length) ? `<div class="flex flex-col gap-0.5 mt-1">${renderItems(seg.items)}</div>` : ''}
+                              </div>`;
+                            });
+                          return parts.length ? `<div class="flex flex-col gap-2 mt-2">${parts.join('')}</div>` : '';
+                        }
+                        // Legacy phase shape — keep older saved workouts rendering correctly
+                        if(!w.phases) return '';
+                        const p = w.phases;
+                        const letters = ['A','B','C','D','E','F'];
+                        const toBlocks = (blocks, legacyItems, legacyRounds) => {
+                          if(Array.isArray(blocks)) return blocks;
+                          if(legacyItems && legacyItems.length) return [{ items: legacyItems, rounds: legacyRounds || 0 }];
+                          return [];
+                        };
+                        const groups = [
+                          { label:'Warm-up',   color:'#DFE3C8', blocks: toBlocks(p.warmups, p.warmup, w.rounds && w.rounds.warmup) },
+                          { label:'Main',      color:'#F6E2AE', blocks: toBlocks(p.mains,   p.main,   w.rounds && w.rounds.main) },
+                          { label:'Cool-down', color:'#EBD9C3', blocks: toBlocks(p.cools,   p.cool,   w.rounds && w.rounds.cool) }
+                        ];
+                        const parts = [];
+                        groups.forEach(g=>{
+                          const filled = g.blocks.filter(b=>b.items && b.items.length);
+                          filled.forEach((blk,bi)=>{
+                            const fallback = g.label + (filled.length > 1 ? ' ' + (letters[bi] || (bi+1)) : '');
+                            const title = (blk.name && blk.name.trim()) ? escapeHtml(blk.name.trim()) : fallback;
+                            parts.push(`<div>
+                              <span class="tag" style="background:${g.color}; color:#4A3A26;">${title}${blk.rounds > 1 ? ' × ' + fmt(blk.rounds) + ' rounds' : ''}</span>${blk.format ? `<span class="tag ml-1.5" style="background:#F5D3BD; color:#4A3A26;">${(() => {
+                                const f = blk.format, c = (blk.cap || '').trim();
+                                if(!c) return escapeHtml(f);
+                                if(f === 'AMRAP')  return 'AMRAP ' + escapeHtml(c);
+                                if(f === 'Every')  return 'Every ' + escapeHtml(c);
+                                if(f === 'EMOM')   return 'EMOM ' + escapeHtml(c);
+                                if(f === 'Tabata') return 'Tabata ' + escapeHtml(c);
+                                if(f === 'Strength') return escapeHtml(f) + ' · rest ' + escapeHtml(c);
+                                return escapeHtml(f) + ' · cap ' + escapeHtml(c);
+                              })()}</span>` : ''}${blk.rest ? `<span class="tag ml-1.5" style="background:#EBD9C3; color:#4A3A26;">rest ${escapeHtml(blk.rest)}</span>` : ''}
+                              <div class="flex flex-col gap-0.5 mt-1">${renderItems(blk.items)}</div>
+                            </div>`);
+                          });
+                        });
+                        return parts.length ? `<div class="flex flex-col gap-2 mt-2">${parts.join('')}</div>` : '';
+                      })()}
+                      ${w.planned ? `<button class="done-workout btn-accent w-full max-w-full block py-2 font-extrabold mt-2 text-sm ink-text" data-id="${w.id}" style="color:var(--ink);">Mark as Done</button>` : ''}
+                    </div>`;
+                }).join('')}
+              </div>
+            </div>
+          `).join('')}
+        </div>
+        ${(hiddenDayCount > 0 || trainDaysShown > 7) ? `
+          <div class="flex flex-col gap-2.5 mt-4">
+            ${hiddenDayCount > 0 ? `
+              <button id="historyMore" class="btn-accent w-full max-w-full block py-3 font-extrabold ink-text" style="color:var(--ink);">Show 30 More Days (${fmt(hiddenDayCount)} left)</button>
+            ` : ''}
+            ${trainDaysShown > 7 ? `
+              <button id="historyCollapse" class="pill w-full max-w-full block py-3 font-extrabold ink-text" style="background:var(--card); color:var(--ink);">Collapse to Last 7 Days</button>
+            ` : ''}
+          </div>
+        ` : ''}
+      ` : `<div class="flex flex-col items-center text-center py-4 gap-2"><i data-lucide="dumbbell" class="w-8 h-8" style="color:var(--accent);"></i><p class="font-extrabold text-sm ink-text text-neutral-900">Your diary starts here</p><p class="text-xs font-bold ink-text text-neutral-900" style="opacity:.7;">Pick a workout type above and log your first session.</p></div>`}
+    </section>
+  `;
+}
+function bindTrain(){
+  document.querySelectorAll('.mode-pill').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      trainMode = b.dataset.mode; editingWorkoutId = null; editFields = {};
+      render();
+      // Nudge the form into view without yanking the page to the middle
+      const card = document.getElementById('trainForm')?.closest('section');
+      if(card){
+        const top = card.getBoundingClientRect().top + window.scrollY - 90;
+        window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+      }
+    });
+  });
+  const dateEl = document.getElementById('trainDate');
+  if(dateEl){
+    ['change','input','blur'].forEach(evt=>{
+      dateEl.addEventListener(evt, ()=>{
+        if(dateEl.value) selectedTrainDate = dateEl.value;
+      });
+    });
+  }
+  const trainFormEl = document.getElementById('trainForm');
+  if(trainFormEl) trainFormEl.addEventListener('submit', e=>{
+    e.preventDefault();
+    const liveEl = document.getElementById('trainDate');
+    if(liveEl && liveEl.value) selectedTrainDate = liveEl.value;
+    const chosenDate = selectedTrainDate || todayKey();
+    const plannedEl = document.getElementById('trainPlanned');
+    const isPlanned = !!(plannedEl && plannedEl.checked);
+    const base = {
+      id: uid(), date: chosenDate, created: Date.now(), type: trainMode, planned: isPlanned,
+      segments: segDraft
+        .map(s=>{
+          const seg = { label: (s.label || '').trim(), rounds: parseNum(s.rounds), items: s.items.slice() };
+          if(s.every && (String(s.every.interval || '').trim() || String(s.every.sets || '').trim())){
+            seg.every = { interval: String(s.every.interval || '').trim(), sets: String(s.every.sets || '').trim() };
+          }
+          if(s.intervals && (String(s.intervals.reps || '').trim() || String(s.intervals.work || '').trim() || String(s.intervals.pace || '').trim())){
+            seg.intervals = { reps: String(s.intervals.reps || '').trim(), work: String(s.intervals.work || '').trim(), pace: String(s.intervals.pace || '').trim() };
+          }
+          return seg;
+        })
+        // A segment earns its place if it has a label, an exercise, or a structured format
+        .filter(s => s.label || s.items.length || s.every || s.intervals)
+    };
+    const wasEditing = !!editingWorkoutId;
+    let payload;
+    let prCandidate = null;
+    if(trainMode==='running'){
+      const dist = parseNum(document.getElementById('runDist').value);
+      const seconds = parseNum(document.getElementById('runH').value) * 3600
+                    + parseNum(document.getElementById('runM').value) * 60
+                    + parseNum(document.getElementById('runS').value);
+      payload = Object.assign(base, {
+        title: dist + ' km run', dist, seconds,
+        note: document.getElementById('runNote').value.trim()
+      });
+    }else if(trainMode==='crossfit'){
+      payload = Object.assign(base, {
+        title: document.getElementById('wodName').value.trim(),
+        score: document.getElementById('wodScore').value.trim(),
+        notes: document.getElementById('wodNotes').value.trim()
+      });
+    }else if(trainMode==='strength'){
+      payload = Object.assign(base, {
+        title: document.getElementById('strTitle').value.trim(),
+        notes: document.getElementById('strNotes').value.trim()
+      });
+    }else{
+      payload = Object.assign(base, {
+        title: document.getElementById('accName').value.trim(),
+        notes: document.getElementById('accNotes').value.trim()
+      });
+    }
+    // Auto-detect a personal best pace for completed runs
+    if(trainMode==='running' && !payload.planned && payload.dist > 0 && payload.seconds > 0){
+      const myPace = payload.seconds / payload.dist; // sec per km, lower is better
+      const previousRuns = state.workouts.filter(w =>
+        w.type === 'running' && !w.planned && w.id !== editingWorkoutId &&
+        Number(w.dist) > 0 && Number(w.seconds) > 0
+      );
+      const bestBefore = previousRuns.length
+        ? Math.min(...previousRuns.map(w => w.seconds / w.dist))
+        : Infinity;
+      if(previousRuns.length && myPace < bestBefore){
+        prCandidate = {
+          name: 'Fastest pace',
+          value: paceString(payload.seconds, payload.dist),
+          date: payload.date
+        };
+      }
+    }
+    if(editingWorkoutId){
+      const idx = state.workouts.findIndex(w=>w.id===editingWorkoutId);
+      if(idx !== -1){
+        // Keep the original id and created timestamp so ordering stays stable
+        payload.id = editingWorkoutId;
+        payload.created = state.workouts[idx].created;
+        state.workouts[idx] = payload;
+      }
+      editingWorkoutId = null;
+      editFields = {};
+      trainMode = null;
+    }else{
+      state.workouts.push(payload);
+    }
+    segDraft = freshSegDraft();
+    editFields = {};
+    saveState();
+    if(prCandidate){
+      haptic([15, 50, 15, 50, 30]);
+      confetti();
+      toast('New fastest pace: ' + prCandidate.value + '!', 'trophy');
+      pendingPR = prCandidate;
+    }else{
+      haptic([12, 40, 18]);
+      toast(wasEditing ? 'Workout updated' : 'Workout logged', 'check-circle-2');
+    }
+    render(true);
+  });
+  const savePR = document.getElementById('savePendingPR');
+  if(savePR){
+    savePR.addEventListener('click', ()=>{
+      state.prs.push({
+        id: uid(), cat: 'running',
+        name: pendingPR.name, value: pendingPR.value, date: pendingPR.date
+      });
+      pendingPR = null;
+      haptic([15, 50, 30]);
+      confetti();
+      toast('Added to your records', 'trophy');
+      saveState(); render();
+    });
+  }
+  const dismissPR = document.getElementById('dismissPendingPR');
+  if(dismissPR){
+    dismissPR.addEventListener('click', ()=>{ pendingPR = null; render(); });
+  }
+  document.querySelectorAll('.dup-workout').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      const w = state.workouts.find(x=>x.id===b.dataset.id);
+      if(!w) return;
+      // Deep copy so the new workout shares no references with the original
+      const copy = JSON.parse(JSON.stringify(w));
+      copy.id = uid();
+      copy.created = Date.now();
+      copy.date = todayKey();
+      copy.planned = false;
+      state.workouts.push(copy);
+      // Leaving edit mode: otherwise the next save would overwrite the workout
+      // that was being edited before this copy was made.
+      editingWorkoutId = null;
+      editFields = {};
+      trainMode = null;
+      segDraft = freshSegDraft();
+      haptic([10, 30, 14]);
+      toast('Copied to today', 'copy');
+      saveState(); render();
+    });
+  });
+  document.querySelectorAll('.edit-workout').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      const w = state.workouts.find(x=>x.id===b.dataset.id);
+      if(!w) return;
+      editingWorkoutId = w.id;
+      trainMode = w.type;
+      selectedTrainDate = w.date;
+      // Type-specific fields
+      editFields = {
+        title: w.title || '',
+        notes: w.notes || '',
+        note: w.note || '',
+        score: w.score || '',
+        dist: (w.dist ?? ''),
+        h: w.seconds ? Math.floor(w.seconds / 3600) || '' : '',
+        m: w.seconds ? Math.floor((w.seconds % 3600) / 60) || '' : '',
+        s: w.seconds ? (w.seconds % 60) || '' : '',
+        planned: !!w.planned
+      };
+      // Rebuild the segment draft from the saved workout.
+      if(Array.isArray(w.segments) && w.segments.length){
+        segDraft = w.segments.map(seg=>{
+          const d = {
+            label: seg.label || '',
+            rounds: seg.rounds ? String(seg.rounds) : '',
+            items: (seg.items || []).map(ex => Object.assign({}, ex))
+          };
+          if(seg.every) d.every = { interval: seg.every.interval || '', sets: seg.every.sets || '' };
+          if(seg.intervals) d.intervals = { reps: seg.intervals.reps || '', work: seg.intervals.work || '', pace: seg.intervals.pace || '' };
+          return d;
+        });
+      }else{
+        // Legacy phase workouts: flatten every block into an ordered segment list
+        // so they open cleanly in the new builder. Format/cap/rest fold into the label.
+        const p = w.phases || {};
+        const segs = [];
+        const pushBlock = (blk, phaseLabel) => {
+          const items = (blk.items || []).map(ex => Object.assign({}, ex));
+          let label = (blk.name && blk.name.trim()) ? blk.name.trim() : phaseLabel;
+          const f = blk.format, c = (blk.cap || '').trim();
+          if(f){
+            if(f === 'AMRAP')       label += ' — AMRAP' + (c ? ' ' + c : '');
+            else if(f === 'EMOM')   label += ' — EMOM' + (c ? ' ' + c : '');
+            else if(f === 'Every')  label += ' — Every' + (c ? ' ' + c : '');
+            else if(f === 'Tabata') label += ' — Tabata' + (c ? ' ' + c : '');
+            else if(f === 'Strength') label += ' — Strength' + (c ? ' · rest ' + c : '');
+            else label += ' — ' + f + (c ? ' · cap ' + c : '');
+          }
+          if(blk.rest) label += ' · rest ' + blk.rest;
+          if(label.trim() || items.length){
+            segs.push({ label: label.trim(), rounds: blk.rounds ? String(blk.rounds) : '', items });
+          }
+        };
+        const eachGroup = (blocks, legacyItems, legacyRounds, phaseLabel) => {
+          if(Array.isArray(blocks) && blocks.length){
+            const multi = blocks.filter(b=>b.items&&b.items.length).length > 1;
+            const letters = ['A','B','C','D','E','F'];
+            let n = 0;
+            blocks.forEach(bl=>{
+              if(!(bl.items && bl.items.length) && !(bl.name && bl.name.trim())) return;
+              const lbl = phaseLabel + (multi ? ' ' + (letters[n] || (n+1)) : '');
+              pushBlock(bl, lbl); n++;
+            });
+          }else if(legacyItems && legacyItems.length){
+            pushBlock({ items: legacyItems, rounds: legacyRounds }, phaseLabel);
+          }
+        };
+        eachGroup(p.warmups, p.warmup, w.rounds && w.rounds.warmup, 'Warm-up');
+        eachGroup(p.mains,   p.main,   w.rounds && w.rounds.main,   'Main');
+        eachGroup(p.cools,   p.cool,   w.rounds && w.rounds.cool,   'Cool-down');
+        segDraft = segs.length ? segs : freshSegDraft();
+      }
+      render(true);
+    });
+  });
+  const cancelBtn = document.getElementById('cancelEdit');
+  if(cancelBtn){
+    cancelBtn.addEventListener('click', ()=>{
+      editingWorkoutId = null;
+      editFields = {};
+      trainMode = null;
+      segDraft = freshSegDraft();
+      render(true);
+    });
+  }
+  document.querySelectorAll('.del-workout').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      if(b.dataset.armed === '1'){
+        const id = b.dataset.id;
+        state.workouts = state.workouts.filter(w=>w.id!==id);
+        // If this was the workout open in the editor, close the editor too
+        if(editingWorkoutId === id){
+          editingWorkoutId = null;
+          editFields = {};
+          trainMode = null;
+          segDraft = freshSegDraft();
+        }
+        haptic([25, 40, 25]);
+        toast('Workout deleted', 'trash-2');
+        saveState(); render();
+        return;
+      }
+      // First tap: arm it and warn. Auto-disarms after 3s.
+      b.dataset.armed = '1';
+      b.style.background = '#E9A0B0';
+      b.innerHTML = '<span style="font-size:.62rem; font-weight:700; color:#4A3A26; padding:0 .2rem;">Sure?</span>';
+      haptic(20);
+      setTimeout(()=>{
+        if(!b.isConnected) return;
+        b.dataset.armed = '0';
+        b.style.background = '#F5D3BD';
+        b.innerHTML = '<i data-lucide="trash-2" class="w-3.5 h-3.5" style="color:#4A3A26;"></i>';
+        refreshIcons();
+      }, 3000);
+    });
+  });
+  document.querySelectorAll('.done-workout').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      const w = state.workouts.find(x=>x.id===b.dataset.id);
+      if(!w) return;
+      w.planned = false;
+      // A run only counts toward records once it's actually done — check now.
+      if(w.type === 'running' && Number(w.dist) > 0 && Number(w.seconds) > 0){
+        const myPace = w.seconds / w.dist;
+        const others = state.workouts.filter(x =>
+          x.type === 'running' && !x.planned && x.id !== w.id &&
+          Number(x.dist) > 0 && Number(x.seconds) > 0
+        );
+        if(others.length && myPace < Math.min(...others.map(x => x.seconds / x.dist))){
+          pendingPR = { name: 'Fastest pace', value: paceString(w.seconds, w.dist), date: w.date };
+          haptic([15, 50, 15, 50, 30]);
+          confetti();
+          toast('New fastest pace: ' + pendingPR.value + '!', 'trophy');
+          saveState(); render(true);
+          return;
+        }
+      }
+      haptic([12, 40, 18]);
+      toast('Marked as done', 'check-circle-2');
+      saveState(); render();
+    });
+  });
+  const segAt = i => segDraft[Number(i)] || null;
+  // Label + rounds update silently (no re-render) so typing keeps focus.
+  document.querySelectorAll('.seg-label').forEach(inp=>{
+    inp.addEventListener('input', ()=>{ const seg = segAt(inp.dataset.seg); if(seg) seg.label = inp.value; });
+  });
+  document.querySelectorAll('.seg-rounds').forEach(inp=>{
+    inp.addEventListener('input', ()=>{ const seg = segAt(inp.dataset.seg); if(seg) seg.rounds = inp.value; });
+  });
+  document.querySelectorAll('.seg-chip').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      const seg = segAt(b.dataset.seg);
+      if(!seg) return;
+      const chip = b.dataset.chip;
+      if(chip === 'Every'){
+        // Structured composer with empty fields — nothing to accidentally save.
+        if(!seg.every) seg.every = { interval:'', sets:'' };
+        haptic(6);
+        render();
+        return;
+      }
+      if(chip === 'Intervals'){
+        if(!seg.intervals) seg.intervals = { reps:'', work:'', pace:'' };
+        haptic(6);
+        render();
+        return;
+      }
+      seg.label = (seg.label && seg.label.trim()) ? (seg.label.trim() + ' — ' + chip) : chip;
+      haptic(6);
+      render();
+    });
+  });
+  document.querySelectorAll('.seg-every-int').forEach(inp=>{
+    inp.addEventListener('input', ()=>{ const seg = segAt(inp.dataset.seg); if(seg && seg.every) seg.every.interval = inp.value; });
+  });
+  document.querySelectorAll('.seg-every-sets').forEach(inp=>{
+    inp.addEventListener('input', ()=>{ const seg = segAt(inp.dataset.seg); if(seg && seg.every) seg.every.sets = inp.value; });
+  });
+  document.querySelectorAll('.seg-every-remove').forEach(b=>{
+    b.addEventListener('click', ()=>{ const seg = segAt(b.dataset.seg); if(seg){ delete seg.every; } haptic(6); render(); });
+  });
+  document.querySelectorAll('.seg-int-reps').forEach(inp=>{
+    inp.addEventListener('input', ()=>{ const seg = segAt(inp.dataset.seg); if(seg && seg.intervals) seg.intervals.reps = inp.value; });
+  });
+  document.querySelectorAll('.seg-int-work').forEach(inp=>{
+    inp.addEventListener('input', ()=>{ const seg = segAt(inp.dataset.seg); if(seg && seg.intervals) seg.intervals.work = inp.value; });
+  });
+  document.querySelectorAll('.seg-int-pace').forEach(inp=>{
+    inp.addEventListener('input', ()=>{ const seg = segAt(inp.dataset.seg); if(seg && seg.intervals) seg.intervals.pace = inp.value; });
+  });
+  document.querySelectorAll('.seg-int-remove').forEach(b=>{
+    b.addEventListener('click', ()=>{ const seg = segAt(b.dataset.seg); if(seg){ delete seg.intervals; } haptic(6); render(); });
+  });
+  document.querySelectorAll('.amt-chip').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      const inp = document.querySelector(`.seg-reps[data-seg="${b.dataset.seg}"]`);
+      if(!inp) return;
+      const cur = (inp.value || '').trim();
+      inp.value = cur ? cur + ' ' + b.dataset.unit : b.dataset.unit;
+      inp.focus();
+      haptic(5);
+    });
+  });
+  document.querySelectorAll('.add-ex').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      const si = b.dataset.seg;
+      const pick = sel => {
+        const el = document.querySelector(`${sel}[data-seg="${si}"]`);
+        return el ? el.value.trim() : '';
+      };
+      const name = pick('.seg-name');
+      if(!name) return;
+      const seg = segAt(si);
+      if(!seg) return;
+      const detail = pick('.seg-detail');
+      const isRun = trainMode==='running';
+      const superEl = document.querySelector(`.seg-super[data-seg="${si}"]`);
+      // A superset links to the exercise directly above — never across a rest row.
+      const prev = seg.items[seg.items.length - 1];
+      const canSuperset = !!(superEl && superEl.checked) && prev && !prev.isRest;
+      seg.items.push({
+        name,
+        reps: pick('.seg-reps'),
+        weight: isRun ? '' : detail,
+        pace:   isRun ? detail : '',
+        superset: canSuperset
+      });
+      render();
+    });
+  });
+  document.querySelectorAll('.add-rest').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      const seg = segAt(b.dataset.seg);
+      if(!seg) return;
+      seg.items.push({ isRest: true, dur: '' });
+      haptic(6);
+      render();
+    });
+  });
+  document.querySelectorAll('.seg-rest-dur').forEach(inp=>{
+    inp.addEventListener('input', ()=>{
+      const seg = segAt(inp.dataset.seg);
+      const it = seg && seg.items[Number(inp.dataset.index)];
+      if(it) it.dur = inp.value;
+    });
+  });
+  // A superset links to the exercise directly above it, so it's invalid at the
+  // top of the list or right after a rest row. Clear any flag that ended up there.
+  const fixSupersets = seg => {
+    seg.items.forEach((it,idx)=>{
+      const above = seg.items[idx-1];
+      if(it.superset && (!above || above.isRest)) it.superset = false;
+    });
+  };
+  document.querySelectorAll('.del-ex').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      const seg = segAt(b.dataset.seg);
+      if(seg){
+        seg.items.splice(Number(b.dataset.index), 1);
+        fixSupersets(seg);
+      }
+      render();
+    });
+  });
+  document.querySelectorAll('.move-ex').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      const seg = segAt(b.dataset.seg);
+      if(!seg) return;
+      const i = Number(b.dataset.index);
+      const j = i + Number(b.dataset.dir);
+      if(j < 0 || j >= seg.items.length) return;
+      [seg.items[i], seg.items[j]] = [seg.items[j], seg.items[i]];
+      fixSupersets(seg);
+      haptic(8);
+      render();
+    });
+  });
+  document.querySelectorAll('.add-seg').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      segDraft.push({ label: '', rounds: '', items: [] });
+      haptic(8);
+      render();
+    });
+  });
+  document.querySelectorAll('.del-seg').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      segDraft.splice(Number(b.dataset.index), 1);
+      if(!segDraft.length) segDraft = freshSegDraft();
+      render();
+    });
+  });
+  document.querySelectorAll('.move-seg').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      const i = Number(b.dataset.index);
+      const j = i + Number(b.dataset.dir);
+      if(j < 0 || j >= segDraft.length) return;
+      [segDraft[i], segDraft[j]] = [segDraft[j], segDraft[i]];
+      haptic(8);
+      render();
+    });
+  });
+  const searchEl = document.getElementById('diarySearch');
+  if(searchEl){
+    searchEl.addEventListener('input', ()=>{
+      diarySearch = searchEl.value;
+      render();
+      // Restore focus and caret after the re-render
+      const again = document.getElementById('diarySearch');
+      if(again){ again.focus(); again.setSelectionRange(again.value.length, again.value.length); }
+    });
+  }
+  const moreBtn = document.getElementById('historyMore');
+  if(moreBtn){
+    moreBtn.addEventListener('click', ()=>{ trainDaysShown += 30; render(); });
+  }
+  const collapseBtn = document.getElementById('historyCollapse');
+  if(collapseBtn){
+    collapseBtn.addEventListener('click', ()=>{ trainDaysShown = 7; render(); });
+  }
+}
+function dmy(dateStr){
+  const parts = (dateStr || '').split('-');
+  if(parts.length !== 3) return dateStr || '';
+  return parts[2] + '/' + parts[1] + '/' + parts[0];
+}
+function renderPRs(){
+  const cats = [
+    { id:'lift', label:'Weight / Lift' },
+    { id:'skill', label:'Skill / Gymnastics' },
+    { id:'running', label:'Running' }
+  ];
+  const list = state.prs.filter(p=>p.cat===prCategory).sort((a,b)=> (b.date||'').localeCompare(a.date||''));
+  return `
+    <header class="mb-6">
+      <h1 class="display font-bold text-3xl header-ink">Personal Records</h1>
+      <p class="display font-semibold text-lg header-ink mt-1">Trophy shelf, on paper</p>
+    </header>
+
+    <div class="flex flex-row justify-center gap-2 w-full mb-5">
+      ${cats.map(c=>`
+        <button class="pr-pill pill px-3 py-2" data-cat="${c.id}" style="background:${prCategory===c.id ? 'var(--accent)' : 'var(--surface)'};">
+          <span class="text-xs font-extrabold ink-text" style="color:var(--ink);">${c.label}</span>
+        </button>
+      `).join('')}
+    </div>
+
+    <section class="card p-5 mb-5">
+      ${sprigSVG()}
+      <div class="flex items-center gap-2 mb-3">
+        <i data-lucide="medal" class="w-5 h-5" style="color:var(--pop);"></i>
+        <h2 class="display font-extrabold text-2xl ink-text text-neutral-900">New Record</h2>
+      </div>
+      <form id="prForm" class="flex flex-col gap-3.5 w-full max-w-full">
+        <input class="field" id="prName" type="text" placeholder="${prCategory==='lift'?'Lift (e.g. Back Squat)':prCategory==='skill'?'Skill (e.g. Ring Muscle-Up)':'Distance (e.g. 5K)'}" required />
+        <input class="field" id="prValue" type="text" placeholder="${prCategory==='lift'?'Value (e.g. 120 kg)':prCategory==='skill'?'Result (e.g. 5 unbroken)':'Time (e.g. 22:41)'}" required />
+        <input class="field" id="prDate" type="date" value="${todayKey()}" />
+        <button type="submit" class="btn-accent w-full max-w-full block py-3 font-extrabold ink-text" style="color:var(--ink);">Save PR</button>
+      </form>
+    </section>
+
+    <section class="card-blob p-5">
+      <div class="flex items-center gap-2 mb-3">
+        <i data-lucide="trophy" class="w-5 h-5" style="color:var(--pop);"></i>
+        <h2 class="display font-extrabold text-2xl ink-text text-neutral-900">${cats.find(c=>c.id===prCategory).label} Records</h2>
+      </div>
+      ${list.length ? `
+        <div class="flex flex-col gap-2.5">
+          ${list.map(p=>{
+            // Find the previous record for the same exercise to show progression
+            const sameName = list.filter(x => x.name.trim().toLowerCase() === p.name.trim().toLowerCase());
+            const idxInSame = sameName.indexOf(p);
+            const prev = sameName[idxInSame + 1]; // list is newest-first
+            let delta = '';
+            if(prev){
+              // Parse a value into a comparable number. Times like 22:41 or 1:05:30
+              // become total seconds; plain values (120 kg, 5 reps) become that number.
+              const numOf = s => {
+                const str = String(s).trim();
+                if(str.includes(':')){
+                  const parts = str.split(':').map(x=>{
+                    const m = x.match(/\d+(\.\d+)?/);
+                    return m ? parseFloat(m[0]) : 0;
+                  });
+                  if(parts.length === 3) return parts[0]*3600 + parts[1]*60 + parts[2];
+                  if(parts.length === 2) return parts[0]*60 + parts[1];
+                }
+                const m = str.match(/-?\d+(\.\d+)?/);
+                return m ? parseFloat(m[0]) : null;
+              };
+              const isTime = String(p.value).includes(':') || String(prev.value).includes(':');
+              const a = numOf(p.value), b = numOf(prev.value);
+              if(a !== null && b !== null && a !== b){
+                const up = a > b;
+                // Lower is better for times (running, or any timed record); higher for lifts/reps
+                const lowerIsBetter = prCategory === 'running' || isTime;
+                const better = lowerIsBetter ? !up : up;
+                const diff = Math.abs(a - b);
+                // Show a time difference in mm:ss, otherwise a plain number
+                let shown;
+                if(isTime){
+                  const mm = Math.floor(diff / 60), ss = Math.round(diff % 60);
+                  shown = mm ? `${mm}:${String(ss).padStart(2,'0')}` : `${ss}s`;
+                }else{
+                  shown = Number.isInteger(diff) ? diff : diff.toFixed(1);
+                }
+                delta = `<span class="tag mt-1" style="background:${better ? '#DFE3C8' : '#F5D3BD'}; color:#4A3A26;">${better ? '▲' : '▼'} ${shown} vs previous</span>`;
+              }
+            }
+            return `
+            <div class="sticky-row rounded-2xl px-4 py-3 flex flex-row items-center justify-between gap-2" style="background:var(--surface);">
+              <div class="flex flex-col min-w-0">
+                <span class="font-extrabold text-sm ink-text text-neutral-900 break-words">${escapeHtml(p.name)}</span>
+                <span class="text-xs font-bold ink-text text-neutral-900">${dmy(p.date)}</span>
+                ${delta}
+              </div>
+              <div class="flex flex-row items-center gap-2 flex-shrink-0">
+                <span class="tag" style="background:#F3D391; color:#4A3A26;">${escapeHtml(p.value)}</span>
+                <button class="del-pr pill px-2 py-1" data-id="${p.id}" style="background:#F5D3BD;">
+                  <i data-lucide="trash-2" class="w-3.5 h-3.5" style="color:#4A3A26;"></i>
+                </button>
+              </div>
+            </div>
+          `;
+          }).join('')}
+        </div>
+      ` : `<div class="flex flex-col items-center text-center py-4 gap-2"><i data-lucide="trophy" class="w-8 h-8" style="color:var(--accent);"></i><p class="font-extrabold text-sm ink-text text-neutral-900">No records yet</p><p class="text-xs font-bold ink-text text-neutral-900" style="opacity:.7;">Time to chase one.</p></div>`}
+    </section>
+  `;
+}
+function bindPRs(){
+  document.querySelectorAll('.pr-pill').forEach(b=>{
+    b.addEventListener('click', ()=>{ prCategory = b.dataset.cat; render(); });
+  });
+  document.getElementById('prForm').addEventListener('submit', e=>{
+    e.preventDefault();
+    haptic([15, 50, 15, 50, 30]);
+    confetti();
+    toast('New record saved!', 'trophy');
+    state.prs.push({
+      id: uid(), cat: prCategory,
+      name: document.getElementById('prName').value.trim(),
+      value: document.getElementById('prValue').value.trim(),
+      date: document.getElementById('prDate').value || todayKey()
+    });
+    saveState(); render();
+  });
+  document.querySelectorAll('.del-pr').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      armDelete(b, ()=>{
+        state.prs = state.prs.filter(p=>p.id!==b.dataset.id);
+        haptic([25, 40, 25]);
+        toast('Record deleted', 'trash-2');
+        saveState(); render();
+      });
+    });
+  });
+}
+
+/* ============ TASKS ============ */
+function renderTasks(){
+  const grouped = {};
+  state.tasks.forEach(t=>{
+    // Older/imported tasks may have no category — group them safely
+    const cat = (t.category && String(t.category).trim()) || 'Uncategorised';
+    if(!grouped[cat]) grouped[cat] = [];
+    grouped[cat].push(t);
+  });
+  const fallbackColors = ['#F5D3BD','#F6E2AE','#DFE3C8','#F3D391','#EBD9C3'];
+  const catNames = Object.keys(grouped);
+  function catColor(cat, i){ return state.taskColors[cat] || fallbackColors[i % fallbackColors.length]; }
+
+  return `
+    <header class="mb-6">
+      <h1 class="display font-bold text-3xl header-ink">Tasks & Reminders</h1>
+      <p class="display font-semibold text-lg header-ink mt-1">Your paper planner, digitized</p>
+    </header>
+
+    <section class="card p-5 mb-5">
+      ${sprigSVG()}
+      <div class="flex items-center gap-2 mb-3">
+        <i data-lucide="circle-plus" class="w-5 h-5" style="color:var(--pop);"></i>
+        <h2 class="display font-extrabold text-2xl ink-text text-neutral-900">Add Task</h2>
+      </div>
+      <form id="taskForm" class="flex flex-col gap-3.5 w-full max-w-full">
+        <input class="field" id="taskText" type="text" placeholder="What needs doing?" required />
+        ${(() => {
+          const cats = [...new Set(state.tasks.map(t=>t.category))].filter(Boolean);
+          if(!cats.length) return '';
+          return `
+            <div class="flex flex-row flex-wrap gap-2">
+              ${cats.map(c=>`
+                <button type="button" class="pick-cat pill px-3 py-1.5" data-cat="${escapeHtml(c)}"
+                  style="background:${selectedTaskCat === c ? (state.taskColors[c] || '#F5D3BD') : 'var(--surface)'};">
+                  <span class="ink-text text-neutral-900" style="font-size:.72rem; font-weight:600;">${escapeHtml(c)}</span>
+                </button>
+              `).join('')}
+            </div>
+          `;
+        })()}
+        <input class="field" id="taskCat" type="text" placeholder="Category — tap one above, or type a new one" value="${escapeHtml(selectedTaskCat || '')}" required />
+        <button type="submit" class="btn-accent w-full max-w-full block py-3 font-extrabold ink-text" style="color:var(--ink);">Add to List</button>
+      </form>
+    </section>
+
+    ${catNames.length ? catNames.map((cat,ci)=>`
+      <section class="card-blob p-5 mb-5" style="border-color:var(--ink);">
+        <div class="flex flex-row items-center justify-between gap-2 mb-3">
+          <span class="tag" style="background:${catColor(cat,ci)}; color:#4A3A26;">${escapeHtml(cat)}</span>
+          <input type="color" class="cat-color" data-cat="${escapeHtml(cat)}" value="${catColor(cat,ci)}" title="Change category color" />
+        </div>
+        <div class="flex flex-col gap-2.5">
+          ${grouped[cat].map(t=>`
+            <div class="sticky-row rounded-2xl px-4 py-2.5 flex flex-row items-center gap-3" style="background:${t.done ? 'var(--card)' : catColor(cat,ci) + '30'}; border-left:5px solid ${catColor(cat,ci)};">
+              <input type="checkbox" class="chunky task-check" data-id="${t.id}" ${t.done ? 'checked' : ''} />
+              <span class="font-extrabold text-sm flex-1 break-words ink-text text-neutral-900 ${t.done ? 'line-through opacity-60' : ''}">${escapeHtml(t.text)}</span>
+              <button class="del-task pill px-2 py-1 flex-shrink-0" data-id="${t.id}" style="background:#F5D3BD;">
+                <i data-lucide="trash-2" class="w-3.5 h-3.5" style="color:#4A3A26;"></i>
+              </button>
+            </div>
+          `).join('')}
+        </div>
+        ${grouped[cat].some(t=>t.done) ? `
+          <button class="clear-done pill w-full max-w-full block py-2.5 font-extrabold mt-3 text-sm ink-text" data-cat="${escapeHtml(cat)}" style="background:var(--card); color:var(--ink);">
+            Clear Completed (${fmt(grouped[cat].filter(t=>t.done).length)})
+          </button>
+        ` : ''}
+      </section>
+    `).join('') : `
+      <section class="card-blob p-5">
+        <p class="font-extrabold text-sm ink-text text-neutral-900">Empty planner page — add your first task above!</p>
+      </section>
+    `}
+  `;
+}
+function bindTasks(){
+  document.getElementById('taskForm').addEventListener('submit', e=>{
+    e.preventDefault();
+    const raw = document.getElementById('taskCat').value.trim();
+    if(!raw) return;
+    // Merge with an existing category if it matches case-insensitively
+    const existing = [...new Set(state.tasks.map(t=>t.category))]
+      .find(c => c.toLowerCase() === raw.toLowerCase());
+    const cat = existing || raw;
+    // Give a brand-new category a colour from the palette rotation
+    if(!state.taskColors[cat]){
+      const palette = ['#F5D3BD','#F6E2AE','#DFE3C8','#B7A4D9','#E9A0B0','#EBD9C3'];
+      const used = Object.keys(state.taskColors).length;
+      state.taskColors[cat] = palette[used % palette.length];
+    }
+    state.tasks.push({
+      id: uid(),
+      category: cat,
+      text: document.getElementById('taskText').value.trim(),
+      done: false
+    });
+    selectedTaskCat = cat;
+    toast('Task added', 'circle-plus');
+    saveState(); render();
+  });
+  document.querySelectorAll('.pick-cat').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      selectedTaskCat = b.dataset.cat;
+      render();
+    });
+  });
+  document.querySelectorAll('.cat-color').forEach(inp=>{
+    inp.addEventListener('change', ()=>{
+      state.taskColors[inp.dataset.cat] = inp.value;
+      saveState(); render();
+    });
+  });
+  document.querySelectorAll('.task-check').forEach(cb=>{
+    cb.addEventListener('change', ()=>{
+      const t = state.tasks.find(x=>x.id===cb.dataset.id);
+      if(t){ t.done = cb.checked; saveState(); render(); }
+    });
+  });
+  document.querySelectorAll('.del-task').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      state.tasks = state.tasks.filter(t=>t.id!==b.dataset.id);
+      saveState(); render();
+    });
+  });
+  document.querySelectorAll('.clear-done').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      const cat = b.dataset.cat;
+      state.tasks = state.tasks.filter(t=>!(t.category===cat && t.done));
+      saveState(); render();
+    });
+  });
+}
+
+/* ============ SETTINGS ============ */
+function renderSettings(){
+  const t = state.targets;
+  const th = state.theme;
+  return `
+    <header class="mb-6">
+      <h1 class="display font-bold text-3xl header-ink">Settings Hub</h1>
+      <p class="display font-semibold text-lg header-ink mt-1">Tune your diary</p>
+    </header>
+
+    <section class="card p-5 mb-5">
+      ${sprigSVG()}
+      <div class="flex items-center gap-2 mb-3">
+        <i data-lucide="target" class="w-5 h-5" style="color:var(--pop);"></i>
+        <h2 class="display font-extrabold text-2xl ink-text text-neutral-900">Daily Targets</h2>
+      </div>
+      <form id="targetsForm" class="flex flex-col gap-3.5 w-full max-w-full">
+        <label class="font-extrabold text-xs ink-text text-neutral-900">Calories (kcal)</label>
+        <input class="field" id="tgCal" type="number" min="0" value="${t.calories}" />
+        <label class="font-extrabold text-xs ink-text text-neutral-900">Protein (g)</label>
+        <input class="field" id="tgP" type="number" min="0" step="0.1" inputmode="decimal" value="${t.protein}" />
+        <label class="font-extrabold text-xs ink-text text-neutral-900">Carbs (g)</label>
+        <input class="field" id="tgC" type="number" min="0" step="0.1" inputmode="decimal" value="${t.carbs}" />
+        <label class="font-extrabold text-xs ink-text text-neutral-900">Fat (g)</label>
+        <input class="field" id="tgF" type="number" min="0" step="0.1" inputmode="decimal" value="${t.fat}" />
+        <label class="font-extrabold text-xs ink-text text-neutral-900">Water (ml)</label>
+        <input class="field" id="tgW" type="number" min="0" value="${t.water}" />
+        <button type="submit" class="btn-accent w-full max-w-full block py-3 font-extrabold ink-text" style="color:var(--ink);">Save Targets</button>
+      </form>
+    </section>
+
+    <section class="card-blob p-5 mb-5">
+      <div class="flex items-center gap-2 mb-3">
+        <i data-lucide="pill" class="w-5 h-5" style="color:var(--pop);"></i>
+        <h2 class="display font-extrabold text-2xl ink-text text-neutral-900">Meds &amp; Supplements</h2>
+      </div>
+      <form id="suppForm" class="flex flex-col gap-3.5 w-full max-w-full mb-3">
+        <input class="field" id="suppName" type="text" placeholder="Name" required />
+        <button type="submit" class="btn-accent w-full max-w-full block py-3 font-extrabold ink-text" style="color:var(--ink);">Add to Daily List</button>
+      </form>
+      ${state.supplements.list.length ? `
+        <div class="flex flex-col gap-2.5">
+          ${state.supplements.list.map((s,i)=>`
+            <div class="sticky-row rounded-2xl px-4 py-2.5 flex flex-row items-center justify-between gap-2" style="background:var(--surface);">
+              <span class="font-extrabold text-sm ink-text text-neutral-900 break-words">${escapeHtml(s)}</span>
+              <button class="del-supp pill px-2 py-1 flex-shrink-0" data-index="${i}" style="background:#F5D3BD;">
+                <i data-lucide="trash-2" class="w-3.5 h-3.5" style="color:#4A3A26;"></i>
+              </button>
+            </div>
+          `).join('')}
+        </div>
+      ` : `<p class="font-extrabold text-sm ink-text text-neutral-900">Nothing on your daily list yet.</p>`}
+    </section>
+
+    <section class="card p-5 mb-5">
+      <div class="flex items-center gap-2 mb-3">
+        <i data-lucide="palette" class="w-5 h-5" style="color:var(--pop);"></i>
+        <h2 class="display font-extrabold text-2xl ink-text text-neutral-900">Palette Designer</h2>
+      </div>
+      <div class="flex flex-col gap-3.5 w-full max-w-full">
+        <div class="sticky-row rounded-2xl px-4 py-3 flex flex-row items-center justify-between gap-2" style="background:var(--surface);">
+          <span class="font-extrabold text-sm ink-text text-neutral-900">Header Text Color</span>
+          <input type="color" class="theme-color" data-key="header" value="${th.header}" />
+        </div>
+        <div class="sticky-row rounded-2xl px-4 py-3 flex flex-row items-center justify-between gap-2" style="background:var(--surface);">
+          <span class="font-extrabold text-sm ink-text text-neutral-900">App Main Background</span>
+          <input type="color" class="theme-color" data-key="appbg" value="${th.appbg}" />
+        </div>
+        <div class="sticky-row rounded-2xl px-4 py-3 flex flex-row items-center justify-between gap-2" style="background:var(--surface);">
+          <span class="font-extrabold text-sm ink-text text-neutral-900">Card Canvas Background</span>
+          <input type="color" class="theme-color" data-key="card" value="${th.card}" />
+        </div>
+        <div class="sticky-row rounded-2xl px-4 py-3 flex flex-row items-center justify-between gap-2" style="background:var(--surface);">
+          <span class="font-extrabold text-sm ink-text text-neutral-900">Border & Outline Ink</span>
+          <input type="color" class="theme-color" data-key="ink" value="${th.ink}" />
+        </div>
+        <div class="sticky-row rounded-2xl px-4 py-3 flex flex-row items-center justify-between gap-2" style="background:var(--surface);">
+          <span class="font-extrabold text-sm ink-text text-neutral-900">Nav & Active Accents</span>
+          <input type="color" class="theme-color" data-key="accent" value="${th.accent}" />
+        </div>
+        <div class="sticky-row rounded-2xl px-4 py-3 flex flex-row items-center justify-between gap-2" style="background:var(--surface);">
+          <span class="font-extrabold text-sm ink-text text-neutral-900">Row & Field Background</span>
+          <div class="flex flex-row items-center gap-2 flex-shrink-0">
+            ${th.surface ? `<button class="reset-auto pill px-2 py-1" data-key="surface" style="background:var(--card);"><i data-lucide="rotate-ccw" class="w-3.5 h-3.5" style="color:var(--ink);"></i></button>` : ''}
+            <input type="color" class="theme-color" data-key="surface" value="${th.surface || '#F5EEDF'}" />
+          </div>
+        </div>
+        <div class="sticky-row rounded-2xl px-4 py-3 flex flex-row items-center justify-between gap-2" style="background:var(--surface);">
+          <span class="font-extrabold text-sm ink-text text-neutral-900">Nav Bar Background</span>
+          <div class="flex flex-row items-center gap-2 flex-shrink-0">
+            ${th.nav ? `<button class="reset-auto pill px-2 py-1" data-key="nav" style="background:var(--card);"><i data-lucide="rotate-ccw" class="w-3.5 h-3.5" style="color:var(--ink);"></i></button>` : ''}
+            <input type="color" class="theme-color" data-key="nav" value="${th.nav || th.appbg}" />
+          </div>
+        </div>
+        <div class="mt-1">
+          <span class="ink-text text-neutral-900" style="font-size:.66rem; font-weight:600; opacity:.55; letter-spacing:.08em; text-transform:uppercase;">Preset palettes</span>
+          <div class="flex flex-row flex-wrap gap-2 mt-2">
+            ${PRESETS.map((p,i)=>`
+              <button class="preset-theme pill flex flex-row items-center gap-1.5 px-2.5 py-1.5" data-preset="${i}" style="background:var(--card);">
+                <span style="display:flex; gap:2px;">
+                  <span style="width:9px; height:9px; border-radius:999px; background:${p.appbg}; border:1px solid rgba(0,0,0,.12);"></span>
+                  <span style="width:9px; height:9px; border-radius:999px; background:${p.card}; border:1px solid rgba(0,0,0,.12);"></span>
+                  <span style="width:9px; height:9px; border-radius:999px; background:${p.accent};"></span>
+                </span>
+                <span class="ink-text text-neutral-900" style="font-size:.66rem; font-weight:600;">${p.name}</span>
+              </button>
+            `).join('')}
+          </div>
+        </div>
+        <button id="resetTheme" class="btn-accent w-full max-w-full block py-3 font-extrabold ink-text mt-2" style="color:var(--ink);">Reset Palette to Default</button>
+      </div>
+    </section>
+
+    <section class="card-blob p-5 mb-5">
+      <div class="flex items-center gap-2 mb-3">
+        <i data-lucide="${th.dark ? 'moon' : 'sun'}" class="w-5 h-5" style="color:var(--pop);"></i>
+        <h2 class="display font-extrabold text-2xl ink-text text-neutral-900">Dark / Light Engine</h2>
+      </div>
+      <button id="darkToggle" class="btn-accent w-full max-w-full block py-3 font-extrabold ink-text" style="color:var(--ink);">
+        Switch to ${th.dark ? 'Light' : 'Dark'} Mode
+      </button>
+      <p class="font-bold text-xs mt-2 ink-text text-neutral-900">Dark mode temporarily overrides your background colors; your custom palette returns in light mode.</p>
+    </section>
+
+    <section class="card p-5">
+      <div class="flex items-center gap-2 mb-3">
+        <i data-lucide="database" class="w-5 h-5" style="color:var(--pop);"></i>
+        <h2 class="display font-extrabold text-2xl ink-text text-neutral-900">Data Backup</h2>
+      </div>
+      <div class="flex flex-col gap-3.5 w-full max-w-full">
+        <button id="exportBtn" class="btn-accent w-full max-w-full block py-3 font-extrabold ink-text" style="color:var(--ink);">Export JSON</button>
+        <label class="btn-accent w-full max-w-full block py-3 font-extrabold text-center cursor-pointer ink-text" style="color:var(--ink);">
+          Import JSON
+          <input type="file" id="importInput" accept="application/json" class="hidden" />
+        </label>
+      </div>
+    </section>
+  `;
+}
+function bindSettings(){
+  document.getElementById('targetsForm').addEventListener('submit', e=>{
+    e.preventDefault();
+    state.targets = {
+      calories: parseNum(document.getElementById('tgCal').value),
+      protein: parseNum(document.getElementById('tgP').value),
+      carbs: parseNum(document.getElementById('tgC').value),
+      fat: parseNum(document.getElementById('tgF').value),
+      water: parseNum(document.getElementById('tgW').value)
+    };
+    toast('Targets saved', 'target');
+    saveState(); render();
+  });
+  document.getElementById('suppForm').addEventListener('submit', e=>{
+    e.preventDefault();
+    const name = document.getElementById('suppName').value.trim();
+    if(name && !state.supplements.list.includes(name)){
+      state.supplements.list.push(name);
+      saveState(); render();
+    }
+  });
+  document.querySelectorAll('.del-supp').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      state.supplements.list.splice(Number(b.dataset.index), 1);
+      saveState(); render();
+    });
+  });
+  document.querySelectorAll('.theme-color').forEach(inp=>{
+    inp.addEventListener('input', ()=>{
+      state.theme[inp.dataset.key] = inp.value;
+      saveState(); applyTheme();
+    });
+  });
+  document.querySelectorAll('.reset-auto').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      state.theme[b.dataset.key] = '';
+      saveState(); applyTheme(); render();
+    });
+  });
+  document.querySelectorAll('.preset-theme').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      const p = PRESETS[Number(b.dataset.preset)];
+      if(!p) return;
+      const wasDark = state.theme.dark;
+      state.theme = Object.assign({}, state.theme, {
+        header: p.header, appbg: p.appbg, card: p.card, ink: p.ink, accent: p.accent,
+        surface: '', nav: '', dark: wasDark
+      });
+      haptic([10, 25, 12]);
+      toast(p.name + ' palette applied', 'palette');
+      saveState(); applyTheme(); render();
+    });
+  });
+  document.getElementById('resetTheme').addEventListener('click', ()=>{
+    const wasDark = state.theme.dark;
+    state.theme = Object.assign({}, DEFAULT_THEME, { dark: wasDark });
+    saveState(); applyTheme(); render();
+  });
+  document.getElementById('darkToggle').addEventListener('click', ()=>{
+    state.theme.dark = !state.theme.dark;
+    saveState(); applyTheme(); render();
+  });
+  document.getElementById('exportBtn').addEventListener('click', ()=>{
+    const blob = new Blob([JSON.stringify(state, null, 2)], { type:'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = 'wodiary-backup.json';
+    document.body.appendChild(a); a.click();
+    document.body.removeChild(a); URL.revokeObjectURL(url);
+  });
+  document.getElementById('importInput').addEventListener('change', e=>{
+    const file = e.target.files[0];
+    if(!file) return;
+    // Import REPLACES everything. Warn first if there's anything to lose.
+    const hasData = state.workouts.length || state.prs.length || state.tasks.length ||
+                    Object.keys(state.meals).length || state.supplements.list.length;
+    if(hasData){
+      const ok = window.confirm(
+        'Import will REPLACE all your current data — workouts, meals, records and tasks.\n\n' +
+        'Export a backup first if you want to keep it.\n\nContinue?'
+      );
+      if(!ok){ e.target.value = ''; return; }
+    }
+    const reader = new FileReader();
+    reader.onload = ev=>{
+      try{
+        const imported = JSON.parse(ev.target.result);
+        state = Object.assign({}, state, imported);
+        // Apply the same guards as loadState — a partial or older backup must not
+        // leave nested objects half-filled (e.g. targets with only "calories").
+        state.theme = Object.assign({}, DEFAULT_THEME, imported.theme || {});
+        state.targets = Object.assign({}, { calories:2200, protein:140, carbs:230, fat:70, water:2500 }, imported.targets || {});
+        state.supplements = Object.assign({ list:[], checked:{} }, imported.supplements || {});
+        state.taskColors = Object.assign({}, imported.taskColors || {});
+        state.waterLog = Object.assign({}, imported.waterLog || {});
+        state.meals = imported.meals || {};
+        state.water = imported.water || {};
+        state.workouts = Array.isArray(imported.workouts) ? imported.workouts : [];
+        state.prs = Array.isArray(imported.prs) ? imported.prs : [];
+        state.tasks = Array.isArray(imported.tasks) ? imported.tasks : [];
+        migrateTheme();
+        lastCounterValues.clear();
+        completedRings.clear();
+        toast('Data imported', 'check-circle-2');
+        saveState(); applyTheme(); render(true);
+      }catch(err){
+        alert('Import failed: that file is not valid WODiary JSON.');
+      }
+    };
+    reader.readAsText(file);
+  });
+}
+
+/* ============ MASTER RENDER ============ */
+// scrollToTop: true only when moving to a different tab. In-place updates
+// (adding an exercise, ticking a box) keep the user where they were.
+function render(scrollToTop = false){
+  const y = window.scrollY;
+  // Preserve anything currently typed in the Train form. Re-rendering (e.g. after
+  // adding an exercise) rebuilds the inputs, which would otherwise clear them.
+  if(activeTab === 'train'){
+    const grab = id => { const el = document.getElementById(id); return el ? el.value : undefined; };
+    const live = {
+      title: grab('wodName') ?? grab('strTitle') ?? grab('accName'),
+      score: grab('wodScore'),
+      notes: grab('wodNotes') ?? grab('strNotes') ?? grab('accNotes'),
+      note: grab('runNote'),
+      dist: grab('runDist'),
+      h: grab('runH'), m: grab('runM'), s: grab('runS')
+    };
+    Object.keys(live).forEach(k => {
+      if(live[k] !== undefined && live[k] !== '') editFields[k] = live[k];
+    });
+  }
+  const view = document.getElementById('view');
+  // Only play the entrance animation on a genuine view change (tab switch),
+  // never on in-place updates like ticking a checkbox.
+  view.classList.toggle('view-enter', !!scrollToTop);
+  if(activeTab==='home'){ view.innerHTML = renderHome(); bindHome(); }
+  else if(activeTab==='food'){ view.innerHTML = renderFood(); bindFood(); }
+  else if(activeTab==='train'){ view.innerHTML = renderTrain(); bindTrain(); }
+  else if(activeTab==='prs'){ view.innerHTML = renderPRs(); bindPRs(); }
+  else if(activeTab==='tasks'){ view.innerHTML = renderTasks(); bindTasks(); }
+  else if(activeTab==='settings'){ view.innerHTML = renderSettings(); bindSettings(); }
+  renderNav();
+  if(scrollToTop){
+    window.scrollTo(0, 0);
+  }else{
+    window.scrollTo(0, y);
+  }
+  refreshIcons();
+  animateCounters();
+}
+
+/* ============ INIT ============ */
+function init(){
+  loadState();
+  applyTheme();
+  render();
+  // iOS keyboard fix: when an input loses focus, nudge the scroll position
+  // so fixed elements (the bottom nav) re-anchor to the real viewport bottom.
+  window.addEventListener('focusout', ()=>{
+    setTimeout(()=>{ window.scrollTo(window.scrollX, window.scrollY); }, 60);
+  });
+  // Detect a day change (midnight, or the app waking after being backgrounded)
+  // and refresh so the date, supplements checklist and "today" totals are correct.
+  let lastSeenDay = todayKey();
+  function checkDayRollover(){
+    const now = todayKey();
+    if(now !== lastSeenDay){
+      lastSeenDay = now;
+      selectedFoodDate = now;
+      selectedTrainDate = now;
+      lastCounterValues.clear();
+      completedRings.clear();
+      render();
+    }
+  }
+  setInterval(checkDayRollover, 30000);
+  // iOS suspends timers when the app is backgrounded, so also check on wake
+  document.addEventListener('visibilitychange', ()=>{
+    if(!document.hidden) checkDayRollover();
+  });
+  window.addEventListener('focus', checkDayRollover);
+  refreshIcons();
+}
+init();
+
+});
+</script>
+</body>
+</html>
